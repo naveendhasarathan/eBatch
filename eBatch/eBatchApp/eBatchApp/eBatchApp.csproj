@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FCF01578-6360-4245-A1E3-69E6F9DF4144}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eBatchApp</RootNamespace>
+    <AssemblyName>eBatchApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Transitions, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Binaries\Transitions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Supplier.Designer.cs">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Utility.cs" />
+    <Compile Include="DataEntry\InvoiceEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataEntry\InvoiceEntry.Designer.cs">
+      <DependentUpon>InvoiceEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntry\InvoiceEntry.resx">
+      <DependentUpon>InvoiceEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataPrep\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureBox1.BackgroundImage.png" />
+    <None Include="Resources\pictureBox1.BackgroundImage.bmp" />
+    <Content Include="Binaries\Transitions.dll" />
+    <Content Include="Theme\Images\BG%401.5x.png" />
+    <Content Include="Theme\Images\BG%402x.png" />
+    <Content Include="Theme\Images\BG.png" />
+    <Content Include="Theme\Resources\012_power-512.png" />
+    <Content Include="Theme\Resources\Admin.png" />
+    <Content Include="Theme\Resources\Admin1.png" />
+    <Content Include="Theme\Resources\BG%402x.jpg" />
+    <Content Include="Theme\Resources\DataEntry.png" />
+    <Content Include="Theme\Resources\DataEntry1.png" />
+    <Content Include="Theme\Resources\DataPrep.png" />
+    <Content Include="Theme\Resources\DataPrep1.png" />
+    <Content Include="Theme\Resources\DataPrep2.png" />
+    <Content Include="Theme\Resources\Disbursemen.png" />
+    <Content Include="Theme\Resources\Disbursemen1.png" />
+    <Content Include="Theme\Resources\Reports.png" />
+    <Content Include="Theme\Resources\Reports1.png" />
+    <Content Include="Theme\Resources\ResearchReject.png" />
+    <Content Include="Theme\Resources\ResearchReject1.png" />
+    <Content Include="Theme\Resources\search_icon.png" />
+    <Content Include="Theme\Resources\Verification.png" />
+    <Content Include="Theme\Resources\Verification1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eBatch.BusinessEntities\eBatch.BusinessEntities.csproj">
+      <Project>{72895262-4eb3-4854-bc0d-6c8afc0e1fa0}</Project>
+      <Name>eBatch.BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eBatch.BusinessLogic\eBatch.BusinessLogic.csproj">
+      <Project>{2d741a78-bbd0-4360-b527-dac7c9f73dfd}</Project>
+      <Name>eBatch.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Purple\eBatch.Theme.csproj">
+      <Project>{8ca70037-f57d-466e-9a8e-607d12ee6621}</Project>
+      <Name>eBatch.Theme</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

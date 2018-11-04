@@ -1,0 +1,15 @@
+E:\Workspace\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.csproj.GenerateResource.Cache
+E:\Workspace\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.Properties.Resources.resources
+E:\Workspace\eBatch\eBatchApp\Purple\bin\Debug\eBatch.Theme.dll
+E:\Workspace\eBatch\eBatchApp\Purple\bin\Debug\eBatch.Theme.pdb
+E:\Workspace\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.dll
+E:\Workspace\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.pdb
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatchApp\Purple\bin\Debug\eBatch.Theme.dll
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatchApp\Purple\bin\Debug\eBatch.Theme.pdb
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.csprojAssemblyReference.cache
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.Properties.Resources.resources
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.csproj.GenerateResource.cache
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.csproj.CoreCompileInputs.cache
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.dll
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.pdb
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.Purple.eButton.resources

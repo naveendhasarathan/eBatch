@@ -1,0 +1,7 @@
+E:\Workspace\eBatch\eBatchApp\Purple\bin\Debug\Purple.dll
+E:\Workspace\eBatch\eBatchApp\Purple\bin\Debug\Purple.pdb
+E:\Workspace\eBatch\eBatchApp\Purple\obj\Debug\Purple.csprojResolveAssemblyReference.cache
+E:\Workspace\eBatch\eBatchApp\Purple\obj\Debug\Purple.Properties.Resources.resources
+E:\Workspace\eBatch\eBatchApp\Purple\obj\Debug\Purple.csproj.GenerateResource.Cache
+E:\Workspace\eBatch\eBatchApp\Purple\obj\Debug\Purple.dll
+E:\Workspace\eBatch\eBatchApp\Purple\obj\Debug\Purple.pdb
