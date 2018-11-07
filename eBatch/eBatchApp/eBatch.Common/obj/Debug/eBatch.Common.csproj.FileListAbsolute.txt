@@ -18,3 +18,14 @@ D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatchApp\eBa
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatchApp\eBatch.Common\obj\Debug\eBatch.Common.csproj.CopyComplete
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatchApp\eBatch.Common\obj\Debug\eBatch.Common.dll
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatchApp\eBatch.Common\obj\Debug\eBatch.Common.pdb
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.Common\bin\Debug\App.config
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.Common\bin\Debug\eBatch.Common.dll.config
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.Common\bin\Debug\eBatch.Common.dll
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.Common\bin\Debug\eBatch.Common.pdb
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.Common\bin\Debug\Dapper.dll
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.Common\bin\Debug\Dapper.xml
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.Common\obj\Debug\eBatch.Common.csprojAssemblyReference.cache
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.Common\obj\Debug\eBatch.Common.csproj.CoreCompileInputs.cache
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.Common\obj\Debug\eBatch.Common.csproj.CopyComplete
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.Common\obj\Debug\eBatch.Common.dll
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.Common\obj\Debug\eBatch.Common.pdb

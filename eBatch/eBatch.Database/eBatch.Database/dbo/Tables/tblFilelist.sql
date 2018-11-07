@@ -1,13 +1,13 @@
 ﻿CREATE TABLE [dbo].[tblFilelist] (
-    [id]          INT      NOT NULL,
-    [supplierid]  INT      NULL,
+    [Id]          INT      NOT NULL,
+    [SupplierId]  INT      NULL,
     [receiptdate] DATETIME NULL,
-    [createdby]   INT      NULL,
-    [createddate] DATETIME NULL,
-    [updatedby]   INT      NULL,
-    [updateddate] DATETIME NULL,
-    CONSTRAINT [PK_tblFilelist] PRIMARY KEY CLUSTERED ([id] ASC),
-    CONSTRAINT [FK_tblFilelist_tblSupplier] FOREIGN KEY ([supplierid]) REFERENCES [dbo].[tblSupplier] ([id]),
-    CONSTRAINT [FK_tblFilelist_tblSupplier1] FOREIGN KEY ([supplierid]) REFERENCES [dbo].[tblSupplier] ([id])
+    [CreatedBy]   INT      NULL,
+    [CreatedDate] DATETIME NULL,
+    [UpdatedBy]   INT      NULL,
+    [UpdatedDate] DATETIME NULL,
+    CONSTRAINT [PK_tblFilelist] PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_tblFilelist_tblSupplier] FOREIGN KEY ([SupplierId]) REFERENCES [dbo].[tblSupplier] ([Id]),
+    CONSTRAINT [FK_tblFilelist_tblSupplier1] FOREIGN KEY ([SupplierId]) REFERENCES [dbo].[tblSupplier] ([Id])
 );
 

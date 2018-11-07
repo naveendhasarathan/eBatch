@@ -1,12 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Drawing;
+using System.Globalization;
+using System.Threading;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Forms;
+using MetroFramework.Components;
+using MetroFramework.Forms;
+
 
 namespace eBatch.Theme.Purple
 {
-    public class eForm : System.Windows.Forms.Form
+    public class eForm : MetroForm
     {
         public eForm()
         {
@@ -14,6 +18,9 @@ namespace eBatch.Theme.Purple
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackgroundImage = global::eBatch.Theme.Properties.Resources.BG_2x;
             ClientSize = new System.Drawing.Size(708, 358);
+            ControlBox = false;
+            FormBorderStyle = FormBorderStyle.None;
+            Style = MetroFramework.MetroColorStyle.Purple;
         }
     }
 }

@@ -8,3 +8,13 @@ D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatch.Databa
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatch.Database\eBatch.Database\obj\Debug\predeploy.sql
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatch.Database\eBatch.Database\obj\Debug\eBatch.Database.dll
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatch.Database\eBatch.Database\obj\Debug\eBatch.Database.pdb
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch.Database\eBatch.Database\bin\Debug\eBatch.Database.dacpac
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch.Database\eBatch.Database\bin\Debug\eBatch.Database.dll
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch.Database\eBatch.Database\bin\Debug\eBatch.Database.pdb
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch.Database\eBatch.Database\obj\Debug\eBatch.Database.sqlprojAssemblyReference.cache
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch.Database\eBatch.Database\obj\Debug\Model.xml
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch.Database\eBatch.Database\obj\Debug\refactor.xml
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch.Database\eBatch.Database\obj\Debug\postdeploy.sql
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch.Database\eBatch.Database\obj\Debug\predeploy.sql
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch.Database\eBatch.Database\obj\Debug\eBatch.Database.dll
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch.Database\eBatch.Database\obj\Debug\eBatch.Database.pdb

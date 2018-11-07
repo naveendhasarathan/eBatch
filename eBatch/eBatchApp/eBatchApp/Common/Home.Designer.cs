@@ -29,6 +29,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.mnuApplication = new System.Windows.Forms.MenuStrip();
@@ -43,28 +46,65 @@
             this.researchandRejectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.disbursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.mnuApplication.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 30);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(784, 107);
+            this.panel1.Size = new System.Drawing.Size(772, 107);
             this.panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.AutoSize = true;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.Font = new System.Drawing.Font("Calibri", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(0, 87);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(23, 20);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "<<";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.metroButton1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(737, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(35, 107);
+            this.panel4.TabIndex = 2;
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.metroButton1.Location = new System.Drawing.Point(0, 84);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(35, 23);
+            this.metroButton1.TabIndex = 1;
+            this.metroButton1.Text = "X";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -77,9 +117,9 @@
             // 
             this.panel2.Controls.Add(this.mnuApplication);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 107);
+            this.panel2.Location = new System.Drawing.Point(0, 137);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(71, 497);
+            this.panel2.Size = new System.Drawing.Size(71, 455);
             this.panel2.TabIndex = 1;
             this.panel2.Visible = false;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
@@ -101,7 +141,7 @@
             this.mnuApplication.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.mnuApplication.Location = new System.Drawing.Point(0, 0);
             this.mnuApplication.Name = "mnuApplication";
-            this.mnuApplication.Size = new System.Drawing.Size(74, 497);
+            this.mnuApplication.Size = new System.Drawing.Size(74, 455);
             this.mnuApplication.TabIndex = 0;
             this.mnuApplication.Text = "File";
             this.mnuApplication.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mnuApplication_ItemClicked);
@@ -196,7 +236,7 @@
             // InvoiceEntry
             // 
             this.InvoiceEntry.Name = "InvoiceEntry";
-            this.InvoiceEntry.Size = new System.Drawing.Size(180, 22);
+            this.InvoiceEntry.Size = new System.Drawing.Size(126, 22);
             this.InvoiceEntry.Text = "Invoice Entry";
             this.InvoiceEntry.Click += new System.EventHandler(this.InvoiceEntry_Click);
             // 
@@ -265,56 +305,33 @@
             this.reportsToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.reportsToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // button1
-            // 
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Font = new System.Drawing.Font("Calibri", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(23, 20);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "<<";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(71, 107);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(23, 497);
-            this.panel3.TabIndex = 7;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 604);
-            this.Controls.Add(this.panel3);
+            this.ClientSize = new System.Drawing.Size(772, 592);
+            this.ControlBox = true;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.DisplayHeader = false;
             this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
             this.Name = "Home";
+            this.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.AeroShadow;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.TransparencyKey = System.Drawing.Color.Empty;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmBase_Load);
             this.MdiChildActivate += new System.EventHandler(this.FrmBase_MdiChildActivate);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.mnuApplication.ResumeLayout(false);
             this.mnuApplication.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -323,6 +340,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        // System.Windows.Forms.MenuStrip
         private System.Windows.Forms.MenuStrip mnuApplication;
         private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
@@ -337,6 +355,7 @@
         private System.Windows.Forms.ToolStripMenuItem filelisttoolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem InvoiceEntry;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel3;
+        private MetroFramework.Controls.MetroButton metroButton1;
+        private System.Windows.Forms.Panel panel4;
     }
 }

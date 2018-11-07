@@ -13,7 +13,6 @@ namespace eBatch.Theme.Purple
             AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             Dock = System.Windows.Forms.DockStyle.Fill;
-            Location = new System.Drawing.Point(3, 54);
             Size = new System.Drawing.Size(694, 272);
         }
     }

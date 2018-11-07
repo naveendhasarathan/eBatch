@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="60ca5f7f-3fdd-4f07-a9bb-12c3a59d049b" ChangeDateTime="11/06/2018 11:20:55">
+    <Property Name="ElementName" Value="[dbo].[tblAuditTrail].[ColumnName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblAuditTrail]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TableName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="87e0406c-52ee-4921-bcdb-63002002a2ab" ChangeDateTime="11/06/2018 11:21:01">
+    <Property Name="ElementName" Value="[dbo].[tblAuditTrail].[ColumnValue]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblAuditTrail]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ColumnName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c768ec0d-2391-4fc0-8df4-5740b3633717" ChangeDateTime="11/06/2018 11:22:53">
+    <Property Name="ElementName" Value="[dbo].[tblAuditTrail].[RowIdentifier]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblAuditTrail]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ColumnValue" />
+  </Operation>
+</Operations>

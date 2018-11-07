@@ -1,4 +1,5 @@
-﻿using eBatchApp.Admin;
+﻿using eBatch.Theme.Purple;
+using eBatchApp.Admin;
 using eBatchApp.DataEntry;
 using System;
 using System.Collections.Generic;
@@ -13,11 +14,16 @@ using Transitions;
 
 namespace eBatchApp.Common
 {
-    public partial class Home : Form
+    public partial class Home : eForm
     {
         public Home()
         {
             InitializeComponent();
+            MinimizeBox = false;
+            MaximizeBox = false;
+            ControlBox = false;
+           
+            RemoveCloseButton();
             researchandRejectToolStripMenuItem.Text = "RESEARCH " + Environment.NewLine + " && REJECT";
             //dataPrepToolStripMenuItem
             dataPrepToolStripMenuItem.Text = "DATA " + Environment.NewLine + "PREP";
@@ -189,6 +195,11 @@ namespace eBatchApp.Common
             frmInvoiceEntry.MdiParent = this;
             frmInvoiceEntry.WindowState = FormWindowState.Maximized;
             frmInvoiceEntry.Show();
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

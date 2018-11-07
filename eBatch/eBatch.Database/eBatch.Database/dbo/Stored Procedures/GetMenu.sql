@@ -1,16 +1,16 @@
 ﻿create procedure GetMenu
-(@userid int)
+(@UserId int)
 as begin
-select userid,moduleid,modulename from
-(select UR.userid ,RM.moduleid, cv.codevalue as modulename, cv.sortorder 
+select UserId,moduleId,moduleName from
+(select UR.UserId ,RM.moduleId, cv.codevalue as moduleName, cv.sortorder 
 from tblUsers U 
-JOIN  tbluser_role UR ON U.id= UR.userid
-JOIN  tblrolemodule RM ON UR.roleid=RM.roleid
-JOIN tblCodeValue cv ON cv.id= RM.moduleid
-where u.id = @userid
+JOIN  tblUser_role UR ON U.Id= UR.UserId
+JOIN  tblrolemodule RM ON UR.roleId=RM.roleId
+JOIN tblCodeValue cv ON cv.Id= RM.moduleId
+where u.Id = @UserId
 UNION ALL
-Select  userid, moduleid,  cv.codevalue as modulename,cv.sortorder from  tbluser_module um
-JOIN tblCodeValue cv ON cv.id= um.moduleid
-where um.userid = @userid) A
+Select  UserId, moduleId,  cv.codevalue as moduleName,cv.sortorder from  tblUser_module um
+JOIN tblCodeValue cv ON cv.Id= um.moduleId
+where um.UserId = @UserId) A
 order by sortorder
 end

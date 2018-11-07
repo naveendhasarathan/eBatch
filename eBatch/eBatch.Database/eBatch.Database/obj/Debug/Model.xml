@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="eBatch.Database.dll" />
-			<Metadata Name="FileName" Value="D:\NAVIN\COLLECTIONS\TELLIANTWORKSPACE\NORTHPOINT\WORKSPACE\EBATCH\EBATCH.DATABASE\EBATCH.DATABASE\OBJ\DEBUG\EBATCH.DATABASE.DLL" />
+			<Metadata Name="FileName" Value="D:\NAVIN\COLLECTIONS\TELLIANTWORKSPACE\NORTHPOINT\WORKSPACE\NORTHPOINT\EBATCH\EBATCH.DATABASE\EBATCH.DATABASE\OBJ\DEBUG\EBATCH.DATABASE.DLL" />
 			<Metadata Name="AssemblyName" Value="eBatch.Database" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatch.Database\eBatch.Database\obj\Debug\eBatch.Database.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch.Database\eBatch.Database\obj\Debug\eBatch.Database.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>
@@ -47,7 +47,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblAttachments_tblFilelist]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblAttachments].[fileid]" />
+					<References Name="[dbo].[tblAttachments].[fileId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -57,7 +57,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblFilelist].[id]" />
+					<References Name="[dbo].[tblFilelist].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -70,7 +70,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblAuditTrail_tblBatch]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblAuditTrail].[batchid]" />
+					<References Name="[dbo].[tblAuditTrail].[BatchId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -80,7 +80,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblBatch].[id]" />
+					<References Name="[dbo].[tblBatch].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -93,7 +93,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblAuditTrail_tblInvoice]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblAuditTrail].[invoiceid]" />
+					<References Name="[dbo].[tblAuditTrail].[InvoiceId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -103,7 +103,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblInvoice].[id]" />
+					<References Name="[dbo].[tblInvoice].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -126,7 +126,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblUsers].[id]" />
+					<References Name="[dbo].[tblUsers].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -149,7 +149,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblUsers].[id]" />
+					<References Name="[dbo].[tblUsers].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -172,7 +172,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblUsers].[id]" />
+					<References Name="[dbo].[tblUsers].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -185,7 +185,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblBatch_Invoice_tblCodeValue]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblBatch_Invoice].[status]" />
+					<References Name="[dbo].[tblBatch_Invoice].[Status]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -195,7 +195,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblCodeValue].[id]" />
+					<References Name="[dbo].[tblCodeValue].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -208,7 +208,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblBatch_Invoice_tblInvoice]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblBatch_Invoice].[invoiceid]" />
+					<References Name="[dbo].[tblBatch_Invoice].[InvoiceId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -218,7 +218,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblInvoice].[id]" />
+					<References Name="[dbo].[tblInvoice].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -231,7 +231,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblBatch_tblCodeValue]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblBatch].[status]" />
+					<References Name="[dbo].[tblBatch].[Status]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -241,7 +241,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblCodeValue].[id]" />
+					<References Name="[dbo].[tblCodeValue].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -254,7 +254,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblBatch_tblUsers]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblBatch].[userid]" />
+					<References Name="[dbo].[tblBatch].[UserId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -264,7 +264,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblUsers].[id]" />
+					<References Name="[dbo].[tblUsers].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -277,7 +277,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblBatch_tblUsers1]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblBatch].[userid]" />
+					<References Name="[dbo].[tblBatch].[UserId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -287,7 +287,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblUsers].[id]" />
+					<References Name="[dbo].[tblUsers].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -300,7 +300,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblCodeValue_tblCodeCategory]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblCodeValue].[categoryid]" />
+					<References Name="[dbo].[tblCodeValue].[categoryId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -310,7 +310,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblCodeCategory].[id]" />
+					<References Name="[dbo].[tblCodeCategory].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -320,20 +320,20 @@
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="14" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblEbatchDetails_tblBatch]">
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblEBatchDetails_tblBatch]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblEbatchDetails].[batchid]" />
+					<References Name="[dbo].[tblEBatchDetails].[BatchId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[tblEbatchDetails]" />
+					<References Name="[dbo].[tblEBatchDetails]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblBatch].[id]" />
+					<References Name="[dbo].[tblBatch].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -343,20 +343,20 @@
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="15" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblEbatchDetails_tblInvoice]">
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblEBatchDetails_tblInvoice]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblEbatchDetails].[invoiceid]" />
+					<References Name="[dbo].[tblEBatchDetails].[InvoiceId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[tblEbatchDetails]" />
+					<References Name="[dbo].[tblEBatchDetails]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblInvoice].[id]" />
+					<References Name="[dbo].[tblInvoice].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -366,20 +366,20 @@
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="16" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblEbatchDetails_tblUsers]">
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblEBatchDetails_tblUsers]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblEbatchDetails].[userid]" />
+					<References Name="[dbo].[tblEBatchDetails].[UserId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[tblEbatchDetails]" />
+					<References Name="[dbo].[tblEBatchDetails]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblUsers].[id]" />
+					<References Name="[dbo].[tblUsers].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -392,7 +392,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblFilelist_tblSupplier]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblFilelist].[supplierid]" />
+					<References Name="[dbo].[tblFilelist].[SupplierId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -402,7 +402,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblSupplier].[id]" />
+					<References Name="[dbo].[tblSupplier].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -415,7 +415,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblFilelist_tblSupplier1]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblFilelist].[supplierid]" />
+					<References Name="[dbo].[tblFilelist].[SupplierId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -425,7 +425,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblSupplier].[id]" />
+					<References Name="[dbo].[tblSupplier].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -438,7 +438,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblInvoice_tblSupplier]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblInvoice].[supplierid]" />
+					<References Name="[dbo].[tblInvoice].[SupplierId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -448,7 +448,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblSupplier].[id]" />
+					<References Name="[dbo].[tblSupplier].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -458,20 +458,20 @@
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="20" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblInvoice_user_tblBatch_Invoice]">
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblInvoice_User_tblBatch_Invoice]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblInvoice_user].[invoiceid]" />
+					<References Name="[dbo].[tblInvoice_User].[InvoiceId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[tblInvoice_user]" />
+					<References Name="[dbo].[tblInvoice_User]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblBatch_Invoice].[id]" />
+					<References Name="[dbo].[tblBatch_Invoice].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -481,20 +481,20 @@
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="21" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblInvoice_user_tblCodeValue]">
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblInvoice_User_tblCodeValue]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblInvoice_user].[status]" />
+					<References Name="[dbo].[tblInvoice_User].[Status]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[tblInvoice_user]" />
+					<References Name="[dbo].[tblInvoice_User]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblCodeValue].[id]" />
+					<References Name="[dbo].[tblCodeValue].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -504,25 +504,25 @@
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="22" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblInvoice_user_tblEbatchDetails]">
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblInvoice_User_tblEBatchDetails]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblInvoice_user].[invoiceid]" />
+					<References Name="[dbo].[tblInvoice_User].[InvoiceId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[tblInvoice_user]" />
+					<References Name="[dbo].[tblInvoice_User]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblEbatchDetails].[id]" />
+					<References Name="[dbo].[tblEBatchDetails].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[tblEbatchDetails]" />
+					<References Name="[dbo].[tblEBatchDetails]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="23" />
@@ -530,7 +530,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblRoleModule_tblCodeValue]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblRoleModule].[roleid]" />
+					<References Name="[dbo].[tblRoleModule].[roleId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -540,7 +540,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblCodeValue].[id]" />
+					<References Name="[dbo].[tblCodeValue].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -553,7 +553,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblRoleModule_tblCodeValue1]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblRoleModule].[moduleid]" />
+					<References Name="[dbo].[tblRoleModule].[moduleId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -563,7 +563,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblCodeValue].[id]" />
+					<References Name="[dbo].[tblCodeValue].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -576,7 +576,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblSupplier_tblCodeValue]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblSupplier].[invoice_type]" />
+					<References Name="[dbo].[tblSupplier].[Invoice_Type]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -586,7 +586,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblCodeValue].[id]" />
+					<References Name="[dbo].[tblCodeValue].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -599,7 +599,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblSupplier_tblCodeValue_difflevel]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblSupplier].[difficult_level]" />
+					<References Name="[dbo].[tblSupplier].[DifficultyLevel]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -609,7 +609,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblCodeValue].[id]" />
+					<References Name="[dbo].[tblCodeValue].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -622,7 +622,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblSupplier_tblCodeValue1]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblSupplier].[difficult_level]" />
+					<References Name="[dbo].[tblSupplier].[DifficultyLevel]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -632,7 +632,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblCodeValue].[id]" />
+					<References Name="[dbo].[tblCodeValue].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -642,20 +642,20 @@
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="28" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbluser_module_tblUsers]">
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblUser_module_tblUsers]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tbluser_module].[userid]" />
+					<References Name="[dbo].[tblUser_module].[UserId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[tbluser_module]" />
+					<References Name="[dbo].[tblUser_module]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblUsers].[id]" />
+					<References Name="[dbo].[tblUsers].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -665,20 +665,20 @@
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="29" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbluser_role_tblUsers]">
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblUser_role_tblUsers]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tbluser_role].[userid]" />
+					<References Name="[dbo].[tblUser_role].[UserId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[tbluser_role]" />
+					<References Name="[dbo].[tblUser_role]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblUsers].[id]" />
+					<References Name="[dbo].[tblUsers].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -691,7 +691,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tblUsers_tblCodeValue]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[tblUsers].[difficult_level]" />
+					<References Name="[dbo].[tblUsers].[DifficultyLevel]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -701,7 +701,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[tblCodeValue].[id]" />
+					<References Name="[dbo].[tblCodeValue].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -715,8 +715,8 @@
 			<Property Name="BodyScript">
 				<Value><![CDATA[ 
 begin
-select b.rolename,a.username from tblusers a inner join tblRoles b on
-a.UserRole = b.id where username = @username
+select b.roleName,a.UserName from tblUsers a inner join tblRoles b on
+a.UserRole = b.Id where UserName = @UserName
 end]]></Value>
 			</Property>
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -729,18 +729,18 @@ end]]></Value>
 				<Entry />
 				<Entry />
 				<Entry>
-					<References Name="[dbo].[tblUsers].[username]" />
+					<References Name="[dbo].[tblUsers].[UserName]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tblUsers].[username]" />
+					<References Name="[dbo].[tblUsers].[UserName]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[GetAccess].[@username]" />
+					<References Name="[dbo].[GetAccess].[@UserName]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="Parameters">
 				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[GetAccess].[@username]">
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[GetAccess].[@UserName]">
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -765,23 +765,23 @@ end]]></Value>
 				<Property Name="Length" Value="184" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="create procedure GetAccess (@username varchar(100)) as" />
+				<Property Name="HeaderContents" Value="create procedure GetAccess (@UserName varchar(100)) as" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[GetMenu]">
 			<Property Name="BodyScript">
 				<Value><![CDATA[ begin
-select userid,moduleid,modulename from
-(select UR.userid ,RM.moduleid, cv.codevalue as modulename, cv.sortorder 
+select UserId,moduleId,moduleName from
+(select UR.UserId ,RM.moduleId, cv.codevalue as moduleName, cv.sortorder 
 from tblUsers U 
-JOIN  tbluser_role UR ON U.id= UR.userid
-JOIN  tblrolemodule RM ON UR.roleid=RM.roleid
-JOIN tblCodeValue cv ON cv.id= RM.moduleid
-where u.id = @userid
+JOIN  tblUser_role UR ON U.Id= UR.UserId
+JOIN  tblrolemodule RM ON UR.roleId=RM.roleId
+JOIN tblCodeValue cv ON cv.Id= RM.moduleId
+where u.Id = @UserId
 UNION ALL
-Select  userid, moduleid,  cv.codevalue as modulename,cv.sortorder from  tbluser_module um
-JOIN tblCodeValue cv ON cv.id= um.moduleid
-where um.userid = @userid) A
+Select  UserId, moduleId,  cv.codevalue as moduleName,cv.sortorder from  tblUser_module um
+JOIN tblCodeValue cv ON cv.Id= um.moduleId
+where um.UserId = @UserId) A
 order by sortorder
 end]]></Value>
 			</Property>
@@ -791,61 +791,34 @@ end]]></Value>
 					<References Name="[dbo].[tblUsers]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tbluser_role]" />
+					<References Name="[dbo].[tblUser_role]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tblUsers].[id]" />
+					<References Name="[dbo].[tblUsers].[Id]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tbluser_role].[userid]" />
+					<References Name="[dbo].[tblUser_role].[UserId]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[tblRoleModule]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tbluser_role].[roleid]" />
+					<References Name="[dbo].[tblUser_role].[roleId]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tblRoleModule].[roleid]" />
+					<References Name="[dbo].[tblRoleModule].[roleId]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[tblCodeValue]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tblCodeValue].[id]" />
+					<References Name="[dbo].[tblCodeValue].[Id]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tblRoleModule].[moduleid]" />
+					<References Name="[dbo].[tblRoleModule].[moduleId]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tbluser_role].[userid]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[tblCodeValue].[codevalue]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[tblCodeValue].[sortorder]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[tblUsers].[id]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[GetMenu].[@userid]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[tbluser_module]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[tblCodeValue].[id]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[tbluser_module].[moduleid]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[tbluser_module].[userid]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[tbluser_module].[moduleid]" />
+					<References Name="[dbo].[tblUser_role].[UserId]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[tblCodeValue].[codevalue]" />
@@ -854,13 +827,40 @@ end]]></Value>
 					<References Name="[dbo].[tblCodeValue].[sortorder]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tbluser_module].[userid]" />
+					<References Name="[dbo].[tblUsers].[Id]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tbluser_role].[userid]" />
+					<References Name="[dbo].[GetMenu].[@UserId]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tblRoleModule].[moduleid]" />
+					<References Name="[dbo].[tblUser_module]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblCodeValue].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblUser_module].[moduleId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblUser_module].[UserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblUser_module].[moduleId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblCodeValue].[codevalue]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblCodeValue].[sortorder]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblUser_module].[UserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblUser_role].[UserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblRoleModule].[moduleId]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[tblCodeValue].[codevalue]" />
@@ -871,7 +871,7 @@ end]]></Value>
 			</Relationship>
 			<Relationship Name="Parameters">
 				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[GetMenu].[@userid]">
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[GetMenu].[@UserId]">
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -895,7 +895,7 @@ end]]></Value>
 				<Property Name="Length" Value="539" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="create procedure GetMenu&#xD;&#xA;(@userid int)&#xD;&#xA;as" />
+				<Property Name="HeaderContents" Value="create procedure GetMenu&#xD;&#xA;(@UserId int)&#xD;&#xA;as" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tblAttachments]">
@@ -904,7 +904,7 @@ end]]></Value>
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[tblAttachments].[id]" />
+								<References Name="[dbo].[tblAttachments].[Id]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -923,7 +923,7 @@ end]]></Value>
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[tblAuditTrail].[id]" />
+								<References Name="[dbo].[tblAuditTrail].[Id]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -942,7 +942,7 @@ end]]></Value>
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[tblBatch].[id]" />
+								<References Name="[dbo].[tblBatch].[Id]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -961,7 +961,7 @@ end]]></Value>
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[tblBatch_Invoice].[id]" />
+								<References Name="[dbo].[tblBatch_Invoice].[Id]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -980,7 +980,7 @@ end]]></Value>
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[tblCodeCategory].[id]" />
+								<References Name="[dbo].[tblCodeCategory].[Id]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -999,7 +999,7 @@ end]]></Value>
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[tblCodeValue].[id]" />
+								<References Name="[dbo].[tblCodeValue].[Id]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -1012,13 +1012,13 @@ end]]></Value>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="37" />
 		</Element>
-		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tblEbatchDetails]">
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tblEBatchDetails]">
 			<Relationship Name="ColumnSpecifications">
 				<Entry>
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[tblEbatchDetails].[id]" />
+								<References Name="[dbo].[tblEBatchDetails].[Id]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -1026,7 +1026,7 @@ end]]></Value>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[tblEbatchDetails]" />
+					<References Name="[dbo].[tblEBatchDetails]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="38" />
@@ -1037,7 +1037,7 @@ end]]></Value>
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[tblFilelist].[id]" />
+								<References Name="[dbo].[tblFilelist].[Id]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -1056,7 +1056,7 @@ end]]></Value>
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[tblInvoice].[id]" />
+								<References Name="[dbo].[tblInvoice].[Id]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -1069,13 +1069,13 @@ end]]></Value>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="40" />
 		</Element>
-		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tblInvoice_user]">
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tblInvoice_User]">
 			<Relationship Name="ColumnSpecifications">
 				<Entry>
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[tblInvoice_user].[id]" />
+								<References Name="[dbo].[tblInvoice_User].[Id]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -1083,7 +1083,7 @@ end]]></Value>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[tblInvoice_user]" />
+					<References Name="[dbo].[tblInvoice_User]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="41" />
@@ -1094,7 +1094,7 @@ end]]></Value>
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[tblRoleModule].[id]" />
+								<References Name="[dbo].[tblRoleModule].[Id]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -1113,7 +1113,7 @@ end]]></Value>
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[tblSupplier].[id]" />
+								<References Name="[dbo].[tblSupplier].[Id]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -1132,7 +1132,7 @@ end]]></Value>
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[tblUsers].[id]" />
+								<References Name="[dbo].[tblUsers].[Id]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -1149,8 +1149,8 @@ end]]></Value>
 			<Property Name="BodyScript">
 				<Value><![CDATA[ 
 begin
-select cv.id,codevalue,[description],sortorder from tblcodevalue cv join
-tblcodecategory cc on cc.id = cv.categoryid 
+select cv.Id,codevalue,[description],sortorder from tblcodevalue cv join
+tblcodecategory cc on cc.Id = cv.categoryId 
 where
 cc.category = @codecategory
 end]]></Value>
@@ -1164,13 +1164,13 @@ end]]></Value>
 					<References Name="[dbo].[tblCodeCategory]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tblCodeCategory].[id]" />
+					<References Name="[dbo].[tblCodeCategory].[Id]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tblCodeValue].[categoryid]" />
+					<References Name="[dbo].[tblCodeValue].[categoryId]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tblCodeValue].[id]" />
+					<References Name="[dbo].[tblCodeValue].[Id]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[tblCodeValue].[codevalue]" />
@@ -1222,7 +1222,7 @@ end]]></Value>
 			<Property Name="BodyScript">
 				<Value><![CDATA[ 
 begin
-select * from tblusers
+select * from tblUsers
 end]]></Value>
 			</Property>
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -1250,17 +1250,17 @@ begin
 
 if(@UserId = 0)
 begin
-	insert into tblUsers (username,difficult_level,active) values
-	(@UserName,@DifficultyLevel,@Active)
-	insert into tbluser_role (userid,roleid)
-	values(scope_identity(), @RoleId)
+	insert into tblUsers (UserName,DifficultyLevel,Status) values
+	(@UserName,@DifficultyLevel,@Status)
+	insert into tblUser_role (UserId,roleId)
+	values(scope_Identity(), @RoleId)
 end
 else
 begin
 
-	update tblUsers set username = @UserName, @DifficultyLevel =difficult_level, active = @Active where
-	id =  @UserId
-	update tbluser_role set roleid = @RoleId where userid= @UserId
+	update tblUsers set UserName = @UserName, @DifficultyLevel =DifficultyLevel, Status = @Status where
+	Id =  @UserId
+	update tblUser_role set roleId = @RoleId where UserId= @UserId
 
 end
 
@@ -1276,13 +1276,13 @@ end]]></Value>
 					<References Name="[dbo].[tblUsers]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tblUsers].[username]" />
+					<References Name="[dbo].[tblUsers].[UserName]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tblUsers].[difficult_level]" />
+					<References Name="[dbo].[tblUsers].[DifficultyLevel]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tblUsers].[active]" />
+					<References Name="[dbo].[tblUsers].[Status]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[spSaveUsers].[@UserName]" />
@@ -1291,22 +1291,22 @@ end]]></Value>
 					<References Name="[dbo].[spSaveUsers].[@DifficultyLevel]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[spSaveUsers].[@Active]" />
+					<References Name="[dbo].[spSaveUsers].[@Status]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tbluser_role]" />
+					<References Name="[dbo].[tblUser_role]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tbluser_role].[userid]" />
+					<References Name="[dbo].[tblUser_role].[UserId]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tbluser_role].[roleid]" />
+					<References Name="[dbo].[tblUser_role].[roleId]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[spSaveUsers].[@RoleId]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tblUsers].[id]" />
+					<References Name="[dbo].[tblUsers].[Id]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="Parameters">
@@ -1375,7 +1375,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[spSaveUsers].[@Active]">
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spSaveUsers].[@Status]">
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1399,14 +1399,14 @@ end]]></Value>
 				<Property Name="Length" Value="557" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE procedure spSaveUsers&#xD;&#xA;@UserId int=0,&#xD;&#xA;@UserName varchar(50),&#xD;&#xA;@RoleId int,&#xD;&#xA;@DifficultyLevel int,&#xD;&#xA;@Active bit&#xD;&#xA;as" />
+				<Property Name="HeaderContents" Value="CREATE procedure spSaveUsers&#xD;&#xA;@UserId int=0,&#xD;&#xA;@UserName varchar(50),&#xD;&#xA;@RoleId int,&#xD;&#xA;@DifficultyLevel int,&#xD;&#xA;@Status bit&#xD;&#xA;as" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tblAttachments]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAttachments].[id]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAttachments].[Id]">
 						<Property Name="IsNullable" Value="False" />
 						<Property Name="IsIdentity" Value="True" />
 						<Relationship Name="TypeSpecifier">
@@ -1423,7 +1423,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAttachments].[fileid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAttachments].[fileId]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -1455,7 +1455,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAttachments].[createddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAttachments].[CreatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1470,7 +1470,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAttachments].[createdby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAttachments].[CreatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1500,7 +1500,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAttachments].[updateddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAttachments].[UpdatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1515,7 +1515,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAttachments].[active]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAttachments].[Status]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1542,7 +1542,7 @@ end]]></Value>
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAuditTrail].[id]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAuditTrail].[Id]">
 						<Property Name="IsNullable" Value="False" />
 						<Property Name="IsIdentity" Value="True" />
 						<Relationship Name="TypeSpecifier">
@@ -1559,7 +1559,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAuditTrail].[batchid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAuditTrail].[BatchId]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1574,7 +1574,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAuditTrail].[invoiceid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAuditTrail].[InvoiceId]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1619,7 +1619,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAuditTrail].[status]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAuditTrail].[Status]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1665,7 +1665,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAuditTrail].[createdby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAuditTrail].[CreatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1680,7 +1680,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAuditTrail].[createddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblAuditTrail].[CreatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1711,7 +1711,7 @@ end]]></Value>
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch].[id]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch].[Id]">
 						<Property Name="IsNullable" Value="False" />
 						<Property Name="IsIdentity" Value="True" />
 						<Relationship Name="TypeSpecifier">
@@ -1728,7 +1728,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch].[userid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch].[UserId]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1743,7 +1743,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch].[status]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch].[Status]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1758,7 +1758,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch].[createdby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch].[CreatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1773,7 +1773,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch].[createddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch].[CreatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1788,7 +1788,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch].[updatedby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch].[UpdatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1803,7 +1803,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch].[updateddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch].[UpdatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1832,7 +1832,7 @@ end]]></Value>
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch_Invoice].[id]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch_Invoice].[Id]">
 						<Property Name="IsNullable" Value="False" />
 						<Property Name="IsIdentity" Value="True" />
 						<Relationship Name="TypeSpecifier">
@@ -1849,7 +1849,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch_Invoice].[batchid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch_Invoice].[BatchId]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -1865,7 +1865,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch_Invoice].[invoiceid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch_Invoice].[InvoiceId]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -1881,7 +1881,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch_Invoice].[status]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch_Invoice].[Status]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1912,7 +1912,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch_Invoice].[createdby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch_Invoice].[CreatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1927,7 +1927,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch_Invoice].[createddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch_Invoice].[CreatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1942,7 +1942,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch_Invoice].[updatedby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch_Invoice].[UpdatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1957,7 +1957,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch_Invoice].[updateddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblBatch_Invoice].[UpdatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1985,7 +1985,7 @@ end]]></Value>
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeCategory].[id]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeCategory].[Id]">
 						<Property Name="IsNullable" Value="False" />
 						<Property Name="IsIdentity" Value="True" />
 						<Relationship Name="TypeSpecifier">
@@ -2018,7 +2018,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeCategory].[createdby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeCategory].[CreatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2033,7 +2033,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeCategory].[createddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeCategory].[CreatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2048,7 +2048,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeCategory].[updatedby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeCategory].[UpdatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2063,7 +2063,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeCategory].[updateddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeCategory].[UpdatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2089,7 +2089,7 @@ end]]></Value>
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeValue].[id]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeValue].[Id]">
 						<Property Name="IsNullable" Value="False" />
 						<Property Name="IsIdentity" Value="True" />
 						<Relationship Name="TypeSpecifier">
@@ -2106,7 +2106,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeValue].[categoryid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeValue].[categoryId]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -2154,7 +2154,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeValue].[createdby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeValue].[CreatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2169,7 +2169,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeValue].[createddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeValue].[CreatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2184,7 +2184,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeValue].[updatedby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeValue].[UpdatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2199,7 +2199,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeValue].[updateddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblCodeValue].[UpdatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2268,11 +2268,11 @@ end]]></Value>
 			<AttachedAnnotation Disambiguator="37" />
 			<AttachedAnnotation Disambiguator="14" />
 		</Element>
-		<Element Type="SqlTable" Name="[dbo].[tblEbatchDetails]">
+		<Element Type="SqlTable" Name="[dbo].[tblEBatchDetails]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEbatchDetails].[id]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEBatchDetails].[Id]">
 						<Property Name="IsNullable" Value="False" />
 						<Property Name="IsIdentity" Value="True" />
 						<Relationship Name="TypeSpecifier">
@@ -2289,7 +2289,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEbatchDetails].[invoiceid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEBatchDetails].[InvoiceId]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2304,7 +2304,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEbatchDetails].[batchid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEBatchDetails].[BatchId]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2319,7 +2319,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEbatchDetails].[userid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEBatchDetails].[UserId]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2334,7 +2334,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEbatchDetails].[invoiceamount]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEBatchDetails].[Invoiceamount]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2349,7 +2349,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEbatchDetails].[refplan]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEBatchDetails].[refplan]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2365,7 +2365,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEbatchDetails].[dealerplan]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEBatchDetails].[dealerplan]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2381,7 +2381,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEbatchDetails].[items]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEBatchDetails].[items]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2397,7 +2397,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEbatchDetails].[shipto]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEBatchDetails].[shipto]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2413,7 +2413,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEbatchDetails].[createdby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEBatchDetails].[CreatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2428,7 +2428,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEbatchDetails].[createddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEBatchDetails].[CreatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2443,7 +2443,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEbatchDetails].[udpatedby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEBatchDetails].[udpatedby]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2458,7 +2458,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEbatchDetails].[updateddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblEBatchDetails].[UpdatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2487,7 +2487,7 @@ end]]></Value>
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblFilelist].[id]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblFilelist].[Id]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -2503,7 +2503,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblFilelist].[supplierid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblFilelist].[SupplierId]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2533,7 +2533,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblFilelist].[createdby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblFilelist].[CreatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2548,7 +2548,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblFilelist].[createddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblFilelist].[CreatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2563,7 +2563,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblFilelist].[updatedby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblFilelist].[UpdatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2578,7 +2578,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblFilelist].[updateddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblFilelist].[UpdatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2606,7 +2606,7 @@ end]]></Value>
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice].[id]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice].[Id]">
 						<Property Name="IsNullable" Value="False" />
 						<Property Name="IsIdentity" Value="True" />
 						<Relationship Name="TypeSpecifier">
@@ -2623,7 +2623,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice].[supplierid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice].[SupplierId]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2638,7 +2638,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice].[invoicename]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice].[InvoiceName]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2654,7 +2654,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice].[createdby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice].[CreatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2669,7 +2669,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice].[createddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice].[CreatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2684,7 +2684,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice].[updatedby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice].[UpdatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2699,7 +2699,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice].[updateddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice].[UpdatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2722,11 +2722,11 @@ end]]></Value>
 			<AttachedAnnotation Disambiguator="40" />
 			<AttachedAnnotation Disambiguator="20" />
 		</Element>
-		<Element Type="SqlTable" Name="[dbo].[tblInvoice_user]">
+		<Element Type="SqlTable" Name="[dbo].[tblInvoice_User]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_user].[id]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_User].[Id]">
 						<Property Name="IsNullable" Value="False" />
 						<Property Name="IsIdentity" Value="True" />
 						<Relationship Name="TypeSpecifier">
@@ -2743,7 +2743,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_user].[invoiceid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_User].[InvoiceId]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2758,7 +2758,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_user].[userid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_User].[UserId]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2773,7 +2773,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_user].[status]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_User].[Status]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2788,7 +2788,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_user].[active]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_User].[Active]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2803,7 +2803,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_user].[createdby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_User].[CreatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2818,7 +2818,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_user].[createddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_User].[CreatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2833,7 +2833,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_user].[updatedby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_User].[UpdatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2848,7 +2848,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_user].[updateddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblInvoice_User].[UpdatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2877,7 +2877,7 @@ end]]></Value>
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblRoleModule].[id]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblRoleModule].[Id]">
 						<Property Name="IsNullable" Value="False" />
 						<Property Name="IsIdentity" Value="True" />
 						<Relationship Name="TypeSpecifier">
@@ -2894,7 +2894,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblRoleModule].[roleid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblRoleModule].[roleId]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2909,7 +2909,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblRoleModule].[moduleid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblRoleModule].[moduleId]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2924,7 +2924,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblRoleModule].[createdby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblRoleModule].[CreatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2939,7 +2939,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblRoleModule].[createddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblRoleModule].[CreatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2997,7 +2997,7 @@ end]]></Value>
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[id]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[Id]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -3013,7 +3013,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[suppliername]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[SupplierName]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3029,7 +3029,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[email]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[Email]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3045,7 +3045,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[difficult_level]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[DifficultyLevel]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3060,7 +3060,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[approval_number]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[Approval_Number]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3076,7 +3076,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[active]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[Status]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3091,7 +3091,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[invoice_type]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[Invoice_Type]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3106,7 +3106,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[createddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[CreatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3121,7 +3121,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[createdby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[CreatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3136,7 +3136,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[updatedby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[UpdatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3151,7 +3151,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[updateddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblSupplier].[UpdatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3176,11 +3176,11 @@ end]]></Value>
 			<AttachedAnnotation Disambiguator="27" />
 			<AttachedAnnotation Disambiguator="28" />
 		</Element>
-		<Element Type="SqlTable" Name="[dbo].[tbluser_module]">
+		<Element Type="SqlTable" Name="[dbo].[tblUser_module]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tbluser_module].[userid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUser_module].[UserId]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -3196,7 +3196,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tbluser_module].[moduleid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUser_module].[moduleId]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -3213,7 +3213,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tbluser_module].[active]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUser_module].[Status]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3228,7 +3228,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tbluser_module].[createddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUser_module].[CreatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3243,7 +3243,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tbluser_module].[createdby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUser_module].[CreatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3258,7 +3258,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tbluser_module].[updatedby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUser_module].[UpdatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3273,7 +3273,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tbluser_module].[updateddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUser_module].[UpdatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3295,11 +3295,11 @@ end]]></Value>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="29" />
 		</Element>
-		<Element Type="SqlTable" Name="[dbo].[tbluser_role]">
+		<Element Type="SqlTable" Name="[dbo].[tblUser_role]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tbluser_role].[userid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUser_role].[UserId]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -3315,7 +3315,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tbluser_role].[roleid]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUser_role].[roleId]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -3342,7 +3342,7 @@ end]]></Value>
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUsers].[id]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUsers].[Id]">
 						<Property Name="IsNullable" Value="False" />
 						<Property Name="IsIdentity" Value="True" />
 						<Relationship Name="TypeSpecifier">
@@ -3359,7 +3359,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUsers].[username]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUsers].[UserName]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3375,7 +3375,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUsers].[difficult_level]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUsers].[DifficultyLevel]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3390,7 +3390,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUsers].[active]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUsers].[Status]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3405,7 +3405,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUsers].[createdby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUsers].[CreatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3420,7 +3420,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUsers].[createddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUsers].[CreatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3435,7 +3435,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUsers].[updatedby]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUsers].[UpdatedBy]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -3450,7 +3450,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUsers].[updateddate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblUsers].[UpdatedDate]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">

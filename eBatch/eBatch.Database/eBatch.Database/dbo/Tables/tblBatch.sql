@@ -1,14 +1,14 @@
 ﻿CREATE TABLE [dbo].[tblBatch] (
-    [id]          INT      IDENTITY (1, 1) NOT NULL,
-    [userid]      INT      NULL,
-    [status]      INT      NULL,
-    [createdby]   INT      NULL,
-    [createddate] DATETIME NULL,
-    [updatedby]   INT      NULL,
-    [updateddate] DATETIME NULL,
-    CONSTRAINT [PK_tblBatch] PRIMARY KEY CLUSTERED ([id] ASC),
-    CONSTRAINT [FK_tblBatch_tblCodeValue] FOREIGN KEY ([status]) REFERENCES [dbo].[tblCodeValue] ([id]),
-    CONSTRAINT [FK_tblBatch_tblUsers] FOREIGN KEY ([userid]) REFERENCES [dbo].[tblUsers] ([id]),
-    CONSTRAINT [FK_tblBatch_tblUsers1] FOREIGN KEY ([userid]) REFERENCES [dbo].[tblUsers] ([id])
+    [Id]          INT      IdENTITY (1, 1) NOT NULL,
+    [UserId]      INT      NULL,
+    [Status]      INT      NULL,
+    [CreatedBy]   INT      NULL,
+    [CreatedDate] DATETIME NULL,
+    [UpdatedBy]   INT      NULL,
+    [UpdatedDate] DATETIME NULL,
+    CONSTRAINT [PK_tblBatch] PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_tblBatch_tblCodeValue] FOREIGN KEY ([Status]) REFERENCES [dbo].[tblCodeValue] ([Id]),
+    CONSTRAINT [FK_tblBatch_tblUsers] FOREIGN KEY ([UserId]) REFERENCES [dbo].[tblUsers] ([Id]),
+    CONSTRAINT [FK_tblBatch_tblUsers1] FOREIGN KEY ([UserId]) REFERENCES [dbo].[tblUsers] ([Id])
 );
 

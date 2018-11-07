@@ -1,16 +1,16 @@
-﻿CREATE TABLE [dbo].[tblInvoice_user] (
-    [id]          INT      IDENTITY (1, 1) NOT NULL,
-    [invoiceid]   INT      NULL,
-    [userid]      INT      NULL,
-    [status]      INT      NULL,
-    [active]      BIT      NULL,
-    [createdby]   INT      NULL,
-    [createddate] DATETIME NULL,
-    [updatedby]   INT      NULL,
-    [updateddate] DATETIME NULL,
-    CONSTRAINT [PK_tblInvoice_user] PRIMARY KEY CLUSTERED ([id] ASC),
-    CONSTRAINT [FK_tblInvoice_user_tblBatch_Invoice] FOREIGN KEY ([invoiceid]) REFERENCES [dbo].[tblBatch_Invoice] ([id]),
-    CONSTRAINT [FK_tblInvoice_user_tblCodeValue] FOREIGN KEY ([status]) REFERENCES [dbo].[tblCodeValue] ([id]),
-    CONSTRAINT [FK_tblInvoice_user_tblEbatchDetails] FOREIGN KEY ([invoiceid]) REFERENCES [dbo].[tblEbatchDetails] ([id])
+﻿CREATE TABLE [dbo].[tblInvoice_User] (
+    [Id]          INT      IdENTITY (1, 1) NOT NULL,
+    [InvoiceId]   INT      NULL,
+    [UserId]      INT      NULL,
+    [Status]      INT      NULL,
+    [Active]      BIT      NULL,
+    [CreatedBy]   INT      NULL,
+    [CreatedDate] DATETIME NULL,
+    [UpdatedBy]   INT      NULL,
+    [UpdatedDate] DATETIME NULL,
+    CONSTRAINT [PK_tblInvoice_User] PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_tblInvoice_User_tblBatch_Invoice] FOREIGN KEY ([InvoiceId]) REFERENCES [dbo].[tblBatch_Invoice] ([Id]),
+    CONSTRAINT [FK_tblInvoice_User_tblCodeValue] FOREIGN KEY ([Status]) REFERENCES [dbo].[tblCodeValue] ([Id]),
+    CONSTRAINT [FK_tblInvoice_User_tblEBatchDetails] FOREIGN KEY ([InvoiceId]) REFERENCES [dbo].[tblEBatchDetails] ([Id])
 );
 

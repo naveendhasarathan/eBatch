@@ -1,5 +1,5 @@
 ﻿create procedure spGetUsers
 as 
 begin
-select * from tblusers
+select * from tblUsers
 end

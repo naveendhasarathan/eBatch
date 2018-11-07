@@ -1,4 +1,6 @@
-﻿namespace eBatchApp.Admin
+﻿using eBatch.Theme.Purple;
+
+namespace eBatchApp.Admin
 {
     partial class User
     {
@@ -31,7 +33,7 @@
             this.pnlGrid = new System.Windows.Forms.Panel();
             this.grbUserList = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtRecordCount = new System.Windows.Forms.TextBox();
+            this.txtRecordCount = new eTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.brnNext = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
@@ -41,7 +43,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAddUser = new System.Windows.Forms.Button();
             this.ddlFieldType = new System.Windows.Forms.ComboBox();
-            this.txtFieldValue = new System.Windows.Forms.TextBox();
+            this.txtFieldValue = new eTextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,8 +61,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.textBox4 = new eTextBox();
+            this.txtName = new eTextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pnlGrid.SuspendLayout();
             this.grbUserList.SuspendLayout();
@@ -114,7 +116,7 @@
             // 
             // txtRecordCount
             // 
-            this.txtRecordCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            //this.txtRecordCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRecordCount.Location = new System.Drawing.Point(808, 12);
             this.txtRecordCount.Name = "txtRecordCount";
             this.txtRecordCount.Size = new System.Drawing.Size(54, 22);
@@ -221,7 +223,7 @@
             // 
             // txtFieldValue
             // 
-            this.txtFieldValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            //this.txtFieldValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFieldValue.Location = new System.Drawing.Point(537, 16);
             this.txtFieldValue.Name = "txtFieldValue";
             this.txtFieldValue.Size = new System.Drawing.Size(150, 22);
@@ -405,18 +407,16 @@
             // 
             // textBox4
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            //this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4.Location = new System.Drawing.Point(150, 193);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 22);
             this.textBox4.TabIndex = 15;
             // 
             // txtName
             // 
-            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            //this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtName.Location = new System.Drawing.Point(150, 67);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(200, 22);
             this.txtName.TabIndex = 14;
             // 
             // dataGridView1
@@ -465,13 +465,13 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnAddUser;
         private System.Windows.Forms.ComboBox ddlFieldType;
-        private System.Windows.Forms.TextBox txtFieldValue;
+        private eTextBox txtFieldValue;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView gvDisplay;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox txtRecordCount;
+        private eTextBox txtRecordCount;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button brnNext;
         private System.Windows.Forms.Button btnPrevious;
@@ -487,8 +487,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox txtName;
+        private eTextBox textBox4;
+        private eTextBox txtName;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;

@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/eBatchApp/eBatch.BusinessEntities/bin/Debug
+/eBatch.Database/eBatch.Database/bin/Debug
+/eBatch.Database/eBatch.Database/obj/Debug
+/eBatchApp/.vs/eBatchApp/v14/.suo
+/eBatchApp/.vs/eBatchApp/v15/Server/sqlite3
+/eBatchApp/.vs/eBatchApp/v15/.suo
+/eBatchApp/eBatch.BusinessEntities/obj/Debug
+/eBatchApp/eBatch.BusinessLogic/bin/Debug
+/eBatchApp/eBatch.BusinessLogic/obj/Debug
+/eBatchApp/eBatch.Common/bin/Debug
+/eBatchApp/eBatch.ResourceAccess/bin/Debug
+/eBatchApp/eBatch.ResourceAccess/obj/Debug
+/eBatchApp/eBatchApp/bin/Debug
+/eBatchApp/eBatchApp/obj
+/eBatchApp/Purple/obj
