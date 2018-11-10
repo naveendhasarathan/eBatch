@@ -1,13 +1,15 @@
 ﻿CREATE TABLE [dbo].[tblUsers] (
-    [Id]              INT          IdENTITY (1, 1) NOT NULL,
-    [UserName]        VARCHAR (50) NULL,
-    [DifficultyLevel] INT          NULL,
-    [Status]          BIT          NULL,
-    [CreatedBy]       INT          NULL,
-    [CreatedDate]     DATETIME     NULL,
-    [UpdatedBy]       INT          NULL,
-    [UpdatedDate]     DATETIME     NULL,
-    CONSTRAINT [PK_tblUsersNew] PRIMARY KEY CLUSTERED ([Id] ASC),
-    CONSTRAINT [FK_tblUsers_tblCodeValue] FOREIGN KEY ([DifficultyLevel]) REFERENCES [dbo].[tblCodeValue] ([Id])
+    [id]              INT          IDENTITY (1, 1) NOT NULL,
+    [username]        VARCHAR (50) NULL,
+    [difficult_level] INT          NULL,
+    [active]          BIT          NULL,
+    [createdby]       INT          NULL,
+    [createddate]     DATETIME     NULL,
+    [updatedby]       INT          NULL,
+    [updateddate]     DATETIME     NULL,
+    CONSTRAINT [PK_tblUsersNew] PRIMARY KEY CLUSTERED ([id] ASC),
+    CONSTRAINT [FK_tblUsers_tblCodeValue] FOREIGN KEY ([difficult_level]) REFERENCES [dbo].[tblCodeValue] ([id])
 );
+
+
 

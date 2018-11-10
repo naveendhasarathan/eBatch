@@ -30,6 +30,7 @@ namespace eBatchApp.Admin
         /// </summary>
         private void InitializeComponent()
         {
+            this.FancyStyleToggleSwitch = new JCS.ToggleSwitch();
             this.txtUserName = new eBatch.Theme.Purple.eTextBox();
             this.cbRole = new System.Windows.Forms.ComboBox();
             this.cbDifficultyLevel = new System.Windows.Forms.ComboBox();
@@ -43,6 +44,15 @@ namespace eBatchApp.Admin
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.SuspendLayout();
+            // 
+            // FancyStyleToggleSwitch
+            // 
+            this.FancyStyleToggleSwitch.Location = new System.Drawing.Point(626, 309);
+            this.FancyStyleToggleSwitch.Name = "FancyStyleToggleSwitch";
+            this.FancyStyleToggleSwitch.OffFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FancyStyleToggleSwitch.OnFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FancyStyleToggleSwitch.Size = new System.Drawing.Size(50, 19);
+            this.FancyStyleToggleSwitch.TabIndex = 17;
             // 
             // txtUserName
             // 
@@ -253,6 +263,7 @@ namespace eBatchApp.Admin
             this.Controls.Add(this.cbDifficultyLevel);
             this.Controls.Add(this.cbRole);
             this.Controls.Add(this.txtUserName);
+            this.Controls.Add(this.FancyStyleToggleSwitch);
             this.Name = "AddUser";
             this.Text = "AddUser";
             this.Load += new System.EventHandler(this.AddUser_Load);
@@ -264,6 +275,7 @@ namespace eBatchApp.Admin
         #endregion
 
         private eTextBox txtUserName;
+          
         private System.Windows.Forms.ComboBox cbRole;
         private System.Windows.Forms.ComboBox cbDifficultyLevel;
         private System.Windows.Forms.Label label1;
@@ -275,5 +287,6 @@ namespace eBatchApp.Admin
         private eNewButton eButton1;
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private JCS.ToggleSwitch FancyStyleToggleSwitch;
     }
 }

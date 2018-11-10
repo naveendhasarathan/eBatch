@@ -21,6 +21,7 @@ namespace eBatch.Theme.Purple
             ControlBox = false;
             FormBorderStyle = FormBorderStyle.None;
             Style = MetroFramework.MetroColorStyle.Purple;
+            Location = new Point(3, 3);
         }
     }
 }

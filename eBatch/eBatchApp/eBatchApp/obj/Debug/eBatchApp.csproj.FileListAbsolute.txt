@@ -57,7 +57,6 @@ D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\eBatch\eBatchApp\eBa
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\obj\Debug\eBatchApp.csprojAssemblyReference.cache
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\obj\Debug\eBatchApp.Admin.AddUser.resources
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\obj\Debug\eBatchApp.Admin.AdminHome.resources
-D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\obj\Debug\eBatchApp.Admin.User.resources
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\obj\Debug\eBatchApp.Common.Home.resources
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\obj\Debug\eBatchApp.Common.Login.resources
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\obj\Debug\eBatchApp.DataEntry.InvoiceEntry.resources
@@ -88,3 +87,5 @@ D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eB
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\obj\Debug\eBatchApp.csproj.CopyComplete
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\obj\Debug\eBatchApp.exe
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\obj\Debug\eBatchApp.pdb
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\bin\Debug\ToggleSwitch.dll
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\bin\Debug\App.config

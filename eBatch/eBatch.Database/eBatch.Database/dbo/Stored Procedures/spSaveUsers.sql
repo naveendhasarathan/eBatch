@@ -3,23 +3,23 @@
 @UserName varchar(50),
 @RoleId int,
 @DifficultyLevel int,
-@Status bit
+@Active bit
 as 
 begin
 
 if(@UserId = 0)
 begin
-	insert into tblUsers (UserName,DifficultyLevel,Status) values
-	(@UserName,@DifficultyLevel,@Status)
-	insert into tblUser_role (UserId,roleId)
-	values(scope_Identity(), @RoleId)
+	insert into tblUsers (username,difficult_level,active) values
+	(@UserName,@DifficultyLevel,@Active)
+	insert into tbluser_role (userid,roleid)
+	values(scope_identity(), @RoleId)
 end
 else
 begin
 
-	update tblUsers set UserName = @UserName, @DifficultyLevel =DifficultyLevel, Status = @Status where
-	Id =  @UserId
-	update tblUser_role set roleId = @RoleId where UserId= @UserId
+	update tblUsers set username = @UserName, @DifficultyLevel =difficult_level, active = @Active where
+	id =  @UserId
+	update tbluser_role set roleid = @RoleId where userid= @UserId
 
 end
 

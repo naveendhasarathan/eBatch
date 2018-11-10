@@ -55,13 +55,14 @@ namespace eBatchApp.Admin
             this.tbRoleMapping = new System.Windows.Forms.TabPage();
             this.dgvUserRoleMapping = new eBatch.Theme.Purple.eGrid();
             this.pnlUserRole = new System.Windows.Forms.Panel();
+            this.cbUsers = new System.Windows.Forms.ComboBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.eNewButton1 = new eBatch.Theme.Purple.eNewButton();
             this.btnUserRoleSave = new eBatch.Theme.Purple.eNewButton();
-            this.cbUsers = new System.Windows.Forms.ComboBox();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codevalue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.active = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.isDefault = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ModuleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Active = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.tbAdminModule.SuspendLayout();
             this.tbUser.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -84,6 +85,7 @@ namespace eBatchApp.Admin
             this.tbAdminModule.Controls.Add(this.tbRoleMapping);
             this.tbAdminModule.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdminModule.Location = new System.Drawing.Point(0, 60);
+            this.tbAdminModule.Margin = new System.Windows.Forms.Padding(0);
             this.tbAdminModule.Name = "tbAdminModule";
             this.tbAdminModule.SelectedIndex = 2;
             this.tbAdminModule.Size = new System.Drawing.Size(708, 298);
@@ -349,20 +351,22 @@ namespace eBatchApp.Admin
             this.dgvUserRoleMapping.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvUserRoleMapping.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
-            this.codevalue,
-            this.active});
+            this.isDefault,
+            this.ModuleName,
+            this.Active});
             this.dgvUserRoleMapping.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvUserRoleMapping.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dgvUserRoleMapping.GridColor = System.Drawing.Color.Black;
             this.dgvUserRoleMapping.Location = new System.Drawing.Point(0, 51);
             this.dgvUserRoleMapping.MultiSelect = false;
             this.dgvUserRoleMapping.Name = "dgvUserRoleMapping";
-            this.dgvUserRoleMapping.ReadOnly = true;
             this.dgvUserRoleMapping.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvUserRoleMapping.RowHeadersVisible = false;
             this.dgvUserRoleMapping.RowTemplate.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvUserRoleMapping.RowTemplate.DividerHeight = 1;
             this.dgvUserRoleMapping.Size = new System.Drawing.Size(700, 202);
             this.dgvUserRoleMapping.TabIndex = 3;
+            this.dgvUserRoleMapping.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUserRoleMapping_CellContentClick);
             this.dgvUserRoleMapping.Enter += new System.EventHandler(this.dgvUserRoleMapping_Enter);
             // 
             // pnlUserRole
@@ -375,6 +379,15 @@ namespace eBatchApp.Admin
             this.pnlUserRole.Name = "pnlUserRole";
             this.pnlUserRole.Size = new System.Drawing.Size(700, 51);
             this.pnlUserRole.TabIndex = 2;
+            // 
+            // cbUsers
+            // 
+            this.cbUsers.FormattingEnabled = true;
+            this.cbUsers.Location = new System.Drawing.Point(114, 21);
+            this.cbUsers.Name = "cbUsers";
+            this.cbUsers.Size = new System.Drawing.Size(121, 21);
+            this.cbUsers.TabIndex = 12;
+            this.cbUsers.SelectedIndexChanged += new System.EventHandler(this.cbUsers_SelectedIndexChanged);
             // 
             // panel5
             // 
@@ -423,40 +436,47 @@ namespace eBatchApp.Admin
             this.btnUserRoleSave.UseCustomForeColor = true;
             this.btnUserRoleSave.UseSelectable = true;
             this.btnUserRoleSave.UseStyleColors = true;
-            // 
-            // cbUsers
-            // 
-            this.cbUsers.FormattingEnabled = true;
-            this.cbUsers.Location = new System.Drawing.Point(114, 21);
-            this.cbUsers.Name = "cbUsers";
-            this.cbUsers.Size = new System.Drawing.Size(121, 21);
-            this.cbUsers.TabIndex = 12;
+            this.btnUserRoleSave.Click += new System.EventHandler(this.btnUserRoleSave_Click);
             // 
             // Id
             // 
-            this.Id.HeaderText = "codevalue";
+            this.Id.HeaderText = "Id";
             this.Id.Name = "Id";
             this.Id.ReadOnly = true;
             this.Id.Visible = false;
             // 
-            // codevalue
+            // isDefault
             // 
-            this.codevalue.HeaderText = "Module";
-            this.codevalue.Name = "codevalue";
-            this.codevalue.ReadOnly = true;
+            this.isDefault.DataPropertyName = "IsDefault";
+            this.isDefault.HeaderText = "IsDefault";
+            this.isDefault.Name = "isDefault";
+            this.isDefault.ReadOnly = true;
+            this.isDefault.Visible = false;
             // 
-            // active
+            // ModuleName
             // 
-            this.active.HeaderText = "Select";
-            this.active.Name = "active";
-            this.active.ReadOnly = true;
+            this.ModuleName.DataPropertyName = "ModuleName";
+            this.ModuleName.HeaderText = "Module Name";
+            this.ModuleName.Name = "ModuleName";
+            this.ModuleName.ReadOnly = true;
+            // 
+            // Active
+            // 
+            this.Active.DataPropertyName = "IsActive";
+            this.Active.FalseValue = "false";
+            this.Active.HeaderText = "Select";
+            this.Active.IndeterminateValue = "";
+            this.Active.Name = "Active";
+            this.Active.TrueValue = "true";
             // 
             // AdminHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(708, 358);
+            this.ControlBox = true;
             this.Controls.Add(this.tbAdminModule);
+            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "AdminHome";
             this.Padding = new System.Windows.Forms.Padding(0, 60, 0, 0);
             this.Style = MetroFramework.MetroColorStyle.White;
@@ -512,7 +532,8 @@ namespace eBatchApp.Admin
         private eNewButton btnUserRoleSave;
         private System.Windows.Forms.ComboBox cbUsers;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codevalue;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn active;
+        private System.Windows.Forms.DataGridViewTextBoxColumn isDefault;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ModuleName;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Active;
     }
 }

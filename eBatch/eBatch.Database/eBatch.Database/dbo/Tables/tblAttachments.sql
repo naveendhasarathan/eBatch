@@ -1,13 +1,15 @@
 ﻿CREATE TABLE [dbo].[tblAttachments] (
-    [Id]          INT             IdENTITY (1, 1) NOT NULL,
-    [fileId]      INT             NOT NULL,
+    [id]          INT             IDENTITY (1, 1) NOT NULL,
+    [fileid]      INT             NOT NULL,
     [attachment]  VARBINARY (MAX) NULL,
-    [CreatedDate] DATETIME        NULL,
-    [CreatedBy]   INT             NULL,
+    [createddate] DATETIME        NULL,
+    [createdby]   INT             NULL,
     [udpatedby]   INT             NULL,
-    [UpdatedDate] DATETIME        NULL,
-    [Status]      BIT             NULL,
-    CONSTRAINT [PK_tblAttachments] PRIMARY KEY CLUSTERED ([Id] ASC),
-    CONSTRAINT [FK_tblAttachments_tblFilelist] FOREIGN KEY ([fileId]) REFERENCES [dbo].[tblFilelist] ([Id])
+    [updateddate] DATETIME        NULL,
+    [active]      BIT             NULL,
+    CONSTRAINT [PK_tblAttachments] PRIMARY KEY CLUSTERED ([id] ASC),
+    CONSTRAINT [FK_tblAttachments_tblFilelist] FOREIGN KEY ([fileid]) REFERENCES [dbo].[tblFilelist] ([id])
 );
+
+
 

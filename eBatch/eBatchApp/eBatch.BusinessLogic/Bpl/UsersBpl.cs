@@ -19,5 +19,16 @@ namespace eBatch.BusinessLogic.Bpl
         {
             new UsersRal().SaveUsers(user);
         }
+
+        public List<RoleMapping> GetUserRoleMapping(int userId)
+        {
+            return new UsersRal().GetUserRoleMapping(userId);
+        }
+
+        public void SaveUserRoleMapping(int UserId,List<RoleMapping> lstRoleMapping)
+        {
+          var dt=  lstRoleMapping.ToDataTable();
+            new UsersRal().SaveUserRoleMapping(UserId,dt);
+        }
     }
 }

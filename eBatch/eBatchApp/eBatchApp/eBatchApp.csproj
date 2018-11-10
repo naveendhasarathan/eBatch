@@ -53,6 +53,10 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="ToggleSwitch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Binaries\ToggleSwitch.dll</HintPath>
+    </Reference>
     <Reference Include="Transitions, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Binaries\Transitions.dll</HintPath>
@@ -77,12 +81,6 @@
     <Compile Include="Admin\Supplier.Designer.cs">
       <DependentUpon>Supplier.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\User.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\User.Designer.cs">
-      <DependentUpon>User.cs</DependentUpon>
-    </Compile>
     <Compile Include="Common\Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,12 +100,6 @@
     <Compile Include="DataEntry\InvoiceEntry.Designer.cs">
       <DependentUpon>InvoiceEntry.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Admin\AddUser.resx">
@@ -115,9 +107,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\User.resx">
-      <DependentUpon>User.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Common\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -158,28 +147,8 @@
   <ItemGroup>
     <None Include="Resources\pictureBox1.BackgroundImage.png" />
     <None Include="Resources\pictureBox1.BackgroundImage.bmp" />
+    <Content Include="Binaries\ToggleSwitch.dll" />
     <Content Include="Binaries\Transitions.dll" />
-    <Content Include="Theme\Images\BG%401.5x.png" />
-    <Content Include="Theme\Images\BG%402x.png" />
-    <Content Include="Theme\Images\BG.png" />
-    <Content Include="Theme\Resources\012_power-512.png" />
-    <Content Include="Theme\Resources\Admin.png" />
-    <Content Include="Theme\Resources\Admin1.png" />
-    <Content Include="Theme\Resources\BG%402x.jpg" />
-    <Content Include="Theme\Resources\DataEntry.png" />
-    <Content Include="Theme\Resources\DataEntry1.png" />
-    <Content Include="Theme\Resources\DataPrep.png" />
-    <Content Include="Theme\Resources\DataPrep1.png" />
-    <Content Include="Theme\Resources\DataPrep2.png" />
-    <Content Include="Theme\Resources\Disbursemen.png" />
-    <Content Include="Theme\Resources\Disbursemen1.png" />
-    <Content Include="Theme\Resources\Reports.png" />
-    <Content Include="Theme\Resources\Reports1.png" />
-    <Content Include="Theme\Resources\ResearchReject.png" />
-    <Content Include="Theme\Resources\ResearchReject1.png" />
-    <Content Include="Theme\Resources\search_icon.png" />
-    <Content Include="Theme\Resources\Verification.png" />
-    <Content Include="Theme\Resources\Verification1.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\eBatch.BusinessEntities\eBatch.BusinessEntities.csproj">

@@ -16,10 +16,13 @@ namespace eBatchApp.Admin
 {
     public partial class AdminHome : eForm
     {
+        int userId = 0;
         public AdminHome()
         {
             InitializeComponent();
             dgvUsers.AutoGenerateColumns = false;
+            dgvSuppliers.AutoGenerateColumns = false;
+            dgvUserRoleMapping.AutoGenerateColumns = false;
         }
 
         private void AdminHome_Load(object sender, EventArgs e)
@@ -72,16 +75,48 @@ namespace eBatchApp.Admin
 
         private void LoadRoleMapping()
         {
+            LoadUserRoleCB();
+
+            //if (!cbUsers.Focused) { return; }
+
+            //dgvUserRoleMapping.DataSource = new UsersBpl().GetUserRoleMapping();
+        }
+
+        private void LoadUserRoleCB()
+        {
             cbUsers.DataSource = new UsersBpl().GetUsers();
             cbUsers.ValueMember = "id";
             cbUsers.DisplayMember = "username";
+        }
 
-            dgvUserRoleMapping.DataSource = Utility.LoadCode(eBatch.BusinessEntities.Enums.CodeEnum.Module);
+        private void LoadUserRoleMappingList(int userId)
+        {
+           var result= new UsersBpl().GetUserRoleMapping(userId);
+            dgvUserRoleMapping.DataSource = result;
         }
 
         private void dgvUserRoleMapping_Enter(object sender, EventArgs e)
         {
-          
+
+        }
+
+        private void cbUsers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ComboBox cb = (ComboBox)sender;
+            if (!cb.Focused) { return; }
+             userId = (int)cb.SelectedValue;
+            LoadUserRoleMappingList(userId);
+        }
+
+        private void dgvUserRoleMapping_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnUserRoleSave_Click(object sender, EventArgs e)
+        {
+            var dt = (List<BL.RoleMapping>)dgvUserRoleMapping.DataSource;
+            new UsersBpl().SaveUserRoleMapping(userId, dt);
         }
     }
 }

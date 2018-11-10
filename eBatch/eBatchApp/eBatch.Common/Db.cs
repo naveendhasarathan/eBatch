@@ -37,5 +37,10 @@ namespace eBatch.Common
             return (List<T>)Connection().Query<T>(spName, dynParam, commandType: CommandType.StoredProcedure);
         }
 
+        public static List<T> Fetch<T>(string spName, DynamicParameters dynParam)
+        {
+            return (List<T>)Connection().Query<T>(spName, dynParam, commandType: CommandType.StoredProcedure);
+        }
+
     }
 }

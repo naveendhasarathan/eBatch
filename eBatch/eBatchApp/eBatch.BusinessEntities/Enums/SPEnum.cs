@@ -9,6 +9,8 @@ namespace eBatch.BusinessEntities.Enums
     public enum SPEnum
     {
         spSaveUsers,
-        spGetUsers
+        spGetUsers,
+        spGetUserRoleMapping,
+        spSaveUserRoleMapping
     }
 }

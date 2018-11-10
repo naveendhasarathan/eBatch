@@ -60,6 +60,7 @@
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="dbo\User Defined Types\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\tblUsers.sql" />
@@ -82,5 +83,8 @@
     <Build Include="dbo\Stored Procedures\spGetCodes.sql" />
     <Build Include="dbo\Stored Procedures\GetMenu.sql" />
     <Build Include="dbo\Stored Procedures\GetAccess.sql" />
+    <Build Include="dbo\Stored Procedures\spSaveUserRoleMapping.sql" />
+    <Build Include="dbo\Stored Procedures\spGetUserRoleMapping.sql" />
+    <Build Include="dbo\User Defined Types\UserRoleMappingTVP.sql" />
   </ItemGroup>
 </Project>

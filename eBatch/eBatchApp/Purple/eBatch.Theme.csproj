@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Purple\eDataGridCheckBoxColumn.cs" />
     <Compile Include="Purple\eLabel.cs">
       <SubType>Component</SubType>
     </Compile>

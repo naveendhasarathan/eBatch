@@ -47,6 +47,7 @@
     <Compile Include="Exceptions\UnauthorizedException.cs" />
     <Compile Include="Models\Codevalue.cs" />
     <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\RoleMapping.cs" />
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
