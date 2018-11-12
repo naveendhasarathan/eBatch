@@ -54,13 +54,14 @@
             this.AdminTile.Text = "Admin";
             this.AdminTile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminTile.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.AdminTile.TileImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.AdminTile.TileImage = global::eBatchApp.Properties.Resources.Admin;
             this.AdminTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.AdminTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.AdminTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.AdminTile.UseCustomBackColor = true;
             this.AdminTile.UseCustomForeColor = true;
             this.AdminTile.UseSelectable = true;
             this.AdminTile.UseStyleColors = true;
+            this.AdminTile.UseTileImage = true;
             this.AdminTile.Click += new System.EventHandler(this.AdminTile_Click);
             // 
             // DataPrepTile
@@ -76,13 +77,14 @@
             this.DataPrepTile.Text = "Data Prep";
             this.DataPrepTile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.DataPrepTile.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.DataPrepTile.TileImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.DataPrepTile.TileImage = global::eBatchApp.Properties.Resources.DataPrep;
             this.DataPrepTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.DataPrepTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.DataPrepTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.DataPrepTile.UseCustomBackColor = true;
             this.DataPrepTile.UseCustomForeColor = true;
             this.DataPrepTile.UseSelectable = true;
             this.DataPrepTile.UseStyleColors = true;
+            this.DataPrepTile.UseTileImage = true;
             // 
             // metroTile2
             // 
@@ -118,13 +120,14 @@
             this.DataEntryTile.Text = "Data Entry";
             this.DataEntryTile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.DataEntryTile.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.DataEntryTile.TileImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.DataEntryTile.TileImage = global::eBatchApp.Properties.Resources.DataEntry;
             this.DataEntryTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.DataEntryTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.DataEntryTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.DataEntryTile.UseCustomBackColor = true;
             this.DataEntryTile.UseCustomForeColor = true;
             this.DataEntryTile.UseSelectable = true;
             this.DataEntryTile.UseStyleColors = true;
+            this.DataEntryTile.UseTileImage = true;
             // 
             // VerificationTile
             // 
@@ -139,13 +142,14 @@
             this.VerificationTile.Text = "Verification";
             this.VerificationTile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.VerificationTile.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.VerificationTile.TileImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.VerificationTile.TileImage = global::eBatchApp.Properties.Resources.Verification;
             this.VerificationTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.VerificationTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.VerificationTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.VerificationTile.UseCustomBackColor = true;
             this.VerificationTile.UseCustomForeColor = true;
             this.VerificationTile.UseSelectable = true;
             this.VerificationTile.UseStyleColors = true;
+            this.VerificationTile.UseTileImage = true;
             // 
             // metroTile5
             // 
@@ -181,13 +185,14 @@
             this.ResearchTitle.Text = "Research / Reject";
             this.ResearchTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ResearchTitle.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.ResearchTitle.TileImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ResearchTitle.TileImage = global::eBatchApp.Properties.Resources.ResearchReject;
             this.ResearchTitle.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.ResearchTitle.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.ResearchTitle.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.ResearchTitle.UseCustomBackColor = true;
             this.ResearchTitle.UseCustomForeColor = true;
             this.ResearchTitle.UseSelectable = true;
             this.ResearchTitle.UseStyleColors = true;
+            this.ResearchTitle.UseTileImage = true;
             // 
             // DisbursementTile
             // 
@@ -202,13 +207,14 @@
             this.DisbursementTile.Text = "Disbursement";
             this.DisbursementTile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.DisbursementTile.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.DisbursementTile.TileImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.DisbursementTile.TileImage = global::eBatchApp.Properties.Resources.Disbursemen;
             this.DisbursementTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.DisbursementTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.DisbursementTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.DisbursementTile.UseCustomBackColor = true;
             this.DisbursementTile.UseCustomForeColor = true;
             this.DisbursementTile.UseSelectable = true;
             this.DisbursementTile.UseStyleColors = true;
+            this.DisbursementTile.UseTileImage = true;
             // 
             // dashboardMessage
             // 
