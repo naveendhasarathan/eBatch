@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Dapper;
@@ -35,6 +36,31 @@ namespace eBatch.Common
                 }
             }
             return (List<T>)Connection().Query<T>(spName, dynParam, commandType: CommandType.StoredProcedure);
+        }
+
+        public static dynamic Fetch<T, T1>(string spName, DynamicParameters param = null, string internalproperty = null, string splitcolumn = null)
+        {
+            var res = Connection().Query<T, T1, T>(spName, (obj1, obj2) =>
+            {
+                var ss = obj1.GetType().GetProperty(internalproperty);
+                PropertyInfo propertyInfo = obj1.GetType().GetProperty(internalproperty);
+                propertyInfo.SetValue(obj1, obj2, null);
+                return obj1;
+            }, param, splitOn: splitcolumn, commandType: CommandType.StoredProcedure).ToList();
+            return res;
+        }
+
+        private static T MapResults<T, T1>(T arg1, T1 arg2)
+        {
+            //var res = new demora
+
+
+
+            var ss = arg1.GetType().GetProperty("userRole");
+            PropertyInfo propertyInfo = arg1.GetType().GetProperty("userRole");
+            propertyInfo.SetValue(arg1, arg2, null);
+            return arg1;
+            //return arg1.GetType().GetProperty("userRole")
         }
 
         public static List<T> Fetch<T>(string spName, DynamicParameters dynParam)

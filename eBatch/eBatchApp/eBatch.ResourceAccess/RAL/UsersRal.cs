@@ -9,6 +9,7 @@ using eBatch.Common;
 using System.Data;
 using eBatch.BusinessEntities.Enums;
 
+
 namespace eBatch.ResourceAccess
 {
     public class UsersRal
@@ -19,7 +20,8 @@ namespace eBatch.ResourceAccess
         /// <returns>List of Users</returns>
         public List<User> GetUsers()
         {
-            return Db.Fetch<User>(SPEnum.spGetUsers.ToString());
+            var res = Db.Fetch<User, Role>(SPEnum.spGetUsers.ToString(), null, "userRole", new Role().FirstCol());
+            return res;
         }
 
         public List<RoleMapping> GetUserRoleMapping(int userId)

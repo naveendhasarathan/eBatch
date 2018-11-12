@@ -84,7 +84,9 @@ namespace eBatchApp.Admin
 
         private void LoadUserRoleCB()
         {
-            cbUsers.DataSource = new UsersBpl().GetUsers();
+            var users = new UsersBpl().GetUsers();
+            users.Insert(0, new BL.User() { id = 0, username = "--Select User--" });
+            cbUsers.DataSource = users;
             cbUsers.ValueMember = "id";
             cbUsers.DisplayMember = "username";
         }

@@ -35,11 +35,6 @@ namespace eBatchApp.Admin
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAudit = new eBatch.Theme.Purple.eNewButton();
             this.dgvUsers = new eBatch.Theme.Purple.eGrid();
-            this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userrole = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.difficulty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Action = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnAddUser = new eBatch.Theme.Purple.eNewButton();
@@ -63,6 +58,12 @@ namespace eBatchApp.Admin
             this.panel5 = new System.Windows.Forms.Panel();
             this.eNewButton1 = new eBatch.Theme.Purple.eNewButton();
             this.btnUserRoleSave = new eBatch.Theme.Purple.eNewButton();
+            this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userrole = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.difficulty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Action = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tbAdminModule.SuspendLayout();
             this.tbUser.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -148,6 +149,7 @@ namespace eBatchApp.Admin
             this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.username,
+            this.Role,
             this.userrole,
             this.difficulty,
             this.status,
@@ -164,41 +166,6 @@ namespace eBatchApp.Admin
             this.dgvUsers.RowTemplate.DividerHeight = 1;
             this.dgvUsers.Size = new System.Drawing.Size(694, 196);
             this.dgvUsers.TabIndex = 1;
-            // 
-            // username
-            // 
-            this.username.DataPropertyName = "username";
-            this.username.HeaderText = "User Name";
-            this.username.Name = "username";
-            this.username.ReadOnly = true;
-            // 
-            // userrole
-            // 
-            this.userrole.HeaderText = "User Role";
-            this.userrole.Name = "userrole";
-            this.userrole.ReadOnly = true;
-            // 
-            // difficulty
-            // 
-            this.difficulty.DataPropertyName = "difficulty_level";
-            this.difficulty.HeaderText = "Difficulty Level";
-            this.difficulty.Name = "difficulty";
-            this.difficulty.ReadOnly = true;
-            // 
-            // status
-            // 
-            this.status.DataPropertyName = "active";
-            this.status.HeaderText = "Status";
-            this.status.Name = "status";
-            this.status.ReadOnly = true;
-            // 
-            // Action
-            // 
-            this.Action.HeaderText = "Action";
-            this.Action.Name = "Action";
-            this.Action.ReadOnly = true;
-            this.Action.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Action.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // panel1
             // 
@@ -470,12 +437,54 @@ namespace eBatchApp.Admin
             this.btnUserRoleSave.UseStyleColors = true;
             this.btnUserRoleSave.Click += new System.EventHandler(this.btnUserRoleSave_Click);
             // 
+            // username
+            // 
+            this.username.DataPropertyName = "username";
+            this.username.HeaderText = "User Name";
+            this.username.Name = "username";
+            this.username.ReadOnly = true;
+            // 
+            // Role
+            // 
+            this.Role.DataPropertyName = "userRole.RoleName";
+            this.Role.HeaderText = "Role";
+            this.Role.Name = "Role";
+            this.Role.ReadOnly = true;
+            // 
+            // userrole
+            // 
+            this.userrole.HeaderText = "User Role";
+            this.userrole.Name = "userrole";
+            this.userrole.ReadOnly = true;
+            // 
+            // difficulty
+            // 
+            this.difficulty.DataPropertyName = "difficulty_level";
+            this.difficulty.HeaderText = "Difficulty Level";
+            this.difficulty.Name = "difficulty";
+            this.difficulty.ReadOnly = true;
+            // 
+            // status
+            // 
+            this.status.DataPropertyName = "active";
+            this.status.HeaderText = "Status";
+            this.status.Name = "status";
+            this.status.ReadOnly = true;
+            // 
+            // Action
+            // 
+            this.Action.HeaderText = "Action";
+            this.Action.Name = "Action";
+            this.Action.ReadOnly = true;
+            this.Action.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Action.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // AdminHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(708, 358);
-            this.ControlBox = true;
+            this.ControlBox = false;
             this.Controls.Add(this.tbAdminModule);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "AdminHome";
@@ -507,11 +516,6 @@ namespace eBatchApp.Admin
         private System.Windows.Forms.TabPage tbSupplier;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabPage tbRoleMapping;
-        private System.Windows.Forms.DataGridViewTextBoxColumn username;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userrole;
-        private System.Windows.Forms.DataGridViewTextBoxColumn difficulty;
-        private System.Windows.Forms.DataGridViewTextBoxColumn status;
-        private System.Windows.Forms.DataGridViewButtonColumn Action;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private eGrid dgvUsers;
@@ -536,5 +540,11 @@ namespace eBatchApp.Admin
         private System.Windows.Forms.DataGridViewTextBoxColumn isDefault;
         private System.Windows.Forms.DataGridViewTextBoxColumn ModuleName;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Active;
+        private System.Windows.Forms.DataGridViewTextBoxColumn username;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userrole;
+        private System.Windows.Forms.DataGridViewTextBoxColumn difficulty;
+        private System.Windows.Forms.DataGridViewTextBoxColumn status;
+        private System.Windows.Forms.DataGridViewButtonColumn Action;
     }
 }

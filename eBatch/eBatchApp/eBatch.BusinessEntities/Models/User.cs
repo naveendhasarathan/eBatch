@@ -11,7 +11,8 @@ namespace eBatch.BusinessEntities.Models
         public int id { get; set; } = 0;
         public string username { get; set; }
         public int? difficulty_level { get; set; }
-        public Role userRole { get; set; }
         public bool? active { get; set; }
+        public Role userRole { get; set; }
+
     }
 }
