@@ -88,4 +88,4 @@ D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eB
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\obj\Debug\eBatchApp.exe
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\obj\Debug\eBatchApp.pdb
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\bin\Debug\ToggleSwitch.dll
-D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\bin\Debug\App.config
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatchApp\obj\Debug\eBatchApp.Common.HomeDashboard.resources

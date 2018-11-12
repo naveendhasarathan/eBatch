@@ -155,10 +155,20 @@ namespace eBatchApp.Common
 
         private void FrmBase_Load(object sender, EventArgs e)
         {
-            panel2.Visible = true;
+            LoadHomeDashBoard();
+            panel2.Visible = false;
             //this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             //this.ControlBox = false;
             //this.Text = String.Empty;
+        }
+
+        private void LoadHomeDashBoard()
+        {
+            
+            HomeDashboard frmHomeDashboard = new HomeDashboard(this);
+            frmHomeDashboard.MdiParent = this;
+            frmHomeDashboard.WindowState = FormWindowState.Maximized;
+            frmHomeDashboard.Show();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -198,6 +208,17 @@ namespace eBatchApp.Common
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void metroLink1_Click(object sender, EventArgs e)
+        {
+            LoadHomeDashBoard();
+            this.panel2.Visible = false;
+        }
+
+        private void metroLink2_Click(object sender, EventArgs e)
         {
             this.Close();
         }

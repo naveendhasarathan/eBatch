@@ -87,6 +87,12 @@
     <Compile Include="Common\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Common\HomeDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\HomeDashboard.Designer.cs">
+      <DependentUpon>HomeDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Common\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Common\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\HomeDashboard.resx">
+      <DependentUpon>HomeDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Common\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

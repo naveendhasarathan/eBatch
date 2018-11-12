@@ -16,7 +16,7 @@ namespace eBatch.Theme.Purple
         {
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            BackgroundImage = global::eBatch.Theme.Properties.Resources.BG_2x;
+           // BackgroundImage = global::eBatch.Theme.Properties.Resources.BG_2x;
             ClientSize = new System.Drawing.Size(708, 358);
             ControlBox = false;
             FormBorderStyle = FormBorderStyle.None;

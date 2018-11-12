@@ -31,7 +31,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.mnuApplication = new System.Windows.Forms.MenuStrip();
@@ -46,6 +45,8 @@
             this.researchandRejectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.disbursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.metroLink1 = new MetroFramework.Controls.MetroLink();
+            this.metroLink2 = new MetroFramework.Controls.MetroLink();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,23 +84,13 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.metroButton1);
+            this.panel4.Controls.Add(this.metroLink2);
+            this.panel4.Controls.Add(this.metroLink1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(737, 0);
+            this.panel4.Location = new System.Drawing.Point(618, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(35, 107);
+            this.panel4.Size = new System.Drawing.Size(154, 107);
             this.panel4.TabIndex = 2;
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.metroButton1.Location = new System.Drawing.Point(0, 84);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(35, 23);
-            this.metroButton1.TabIndex = 1;
-            this.metroButton1.Text = "X";
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // pictureBox1
             // 
@@ -305,6 +296,26 @@
             this.reportsToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.reportsToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
+            // metroLink1
+            // 
+            this.metroLink1.Location = new System.Drawing.Point(19, 87);
+            this.metroLink1.Name = "metroLink1";
+            this.metroLink1.Size = new System.Drawing.Size(91, 17);
+            this.metroLink1.TabIndex = 2;
+            this.metroLink1.Text = "Dashboard";
+            this.metroLink1.UseSelectable = true;
+            this.metroLink1.Click += new System.EventHandler(this.metroLink1_Click);
+            // 
+            // metroLink2
+            // 
+            this.metroLink2.Location = new System.Drawing.Point(100, 87);
+            this.metroLink2.Name = "metroLink2";
+            this.metroLink2.Size = new System.Drawing.Size(56, 17);
+            this.metroLink2.TabIndex = 3;
+            this.metroLink2.Text = "Exit";
+            this.metroLink2.UseSelectable = true;
+            this.metroLink2.Click += new System.EventHandler(this.metroLink2_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
@@ -316,6 +327,7 @@
             this.DisplayHeader = false;
             this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IsMdiContainer = true;
+            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "Home";
             this.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.AeroShadow;
@@ -355,7 +367,8 @@
         private System.Windows.Forms.ToolStripMenuItem filelisttoolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem InvoiceEntry;
         private System.Windows.Forms.Button button1;
-        private MetroFramework.Controls.MetroButton metroButton1;
         private System.Windows.Forms.Panel panel4;
+        private MetroFramework.Controls.MetroLink metroLink1;
+        private MetroFramework.Controls.MetroLink metroLink2;
     }
 }

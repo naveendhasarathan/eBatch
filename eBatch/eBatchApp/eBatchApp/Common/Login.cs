@@ -1,4 +1,5 @@
-﻿using eBatch.Theme.Purple;
+﻿using eBatch.BusinessEntities.Enums;
+using eBatch.Theme.Purple;
 using eBatchApp.Admin;
 using eBatchApp.DataEntry;
 using System;
@@ -30,6 +31,7 @@ namespace eBatchApp.Common
 
             Home home = new Home();
             home.Show();
+            GlobalConstants.LogginInUser = "1";
 
             //AdminHome ah = new AdminHome();
             //ah.Show();
