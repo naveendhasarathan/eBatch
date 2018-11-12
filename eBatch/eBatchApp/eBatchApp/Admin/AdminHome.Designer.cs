@@ -54,15 +54,15 @@ namespace eBatchApp.Admin
             this.Actions = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbRoleMapping = new System.Windows.Forms.TabPage();
             this.dgvUserRoleMapping = new eBatch.Theme.Purple.eGrid();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isDefault = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ModuleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Active = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.pnlUserRole = new System.Windows.Forms.Panel();
             this.cbUsers = new System.Windows.Forms.ComboBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.eNewButton1 = new eBatch.Theme.Purple.eNewButton();
             this.btnUserRoleSave = new eBatch.Theme.Purple.eNewButton();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isDefault = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ModuleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Active = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.tbAdminModule.SuspendLayout();
             this.tbUser.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -87,7 +87,7 @@ namespace eBatchApp.Admin
             this.tbAdminModule.Location = new System.Drawing.Point(0, 60);
             this.tbAdminModule.Margin = new System.Windows.Forms.Padding(0);
             this.tbAdminModule.Name = "tbAdminModule";
-            this.tbAdminModule.SelectedIndex = 2;
+            this.tbAdminModule.SelectedIndex = 0;
             this.tbAdminModule.Size = new System.Drawing.Size(708, 298);
             this.tbAdminModule.TabIndex = 0;
             this.tbAdminModule.UseSelectable = true;
@@ -133,6 +133,7 @@ namespace eBatchApp.Admin
             this.btnAudit.UseCustomForeColor = true;
             this.btnAudit.UseSelectable = true;
             this.btnAudit.UseStyleColors = true;
+            this.btnAudit.Click += new System.EventHandler(this.btnAudit_Click);
             // 
             // dgvUsers
             // 
@@ -369,6 +370,37 @@ namespace eBatchApp.Admin
             this.dgvUserRoleMapping.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUserRoleMapping_CellContentClick);
             this.dgvUserRoleMapping.Enter += new System.EventHandler(this.dgvUserRoleMapping_Enter);
             // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
+            // 
+            // isDefault
+            // 
+            this.isDefault.DataPropertyName = "IsDefault";
+            this.isDefault.HeaderText = "IsDefault";
+            this.isDefault.Name = "isDefault";
+            this.isDefault.ReadOnly = true;
+            this.isDefault.Visible = false;
+            // 
+            // ModuleName
+            // 
+            this.ModuleName.DataPropertyName = "ModuleName";
+            this.ModuleName.HeaderText = "Module Name";
+            this.ModuleName.Name = "ModuleName";
+            this.ModuleName.ReadOnly = true;
+            // 
+            // Active
+            // 
+            this.Active.DataPropertyName = "IsActive";
+            this.Active.FalseValue = "false";
+            this.Active.HeaderText = "Select";
+            this.Active.IndeterminateValue = "";
+            this.Active.Name = "Active";
+            this.Active.TrueValue = "true";
+            // 
             // pnlUserRole
             // 
             this.pnlUserRole.BackColor = System.Drawing.Color.Gainsboro;
@@ -437,37 +469,6 @@ namespace eBatchApp.Admin
             this.btnUserRoleSave.UseSelectable = true;
             this.btnUserRoleSave.UseStyleColors = true;
             this.btnUserRoleSave.Click += new System.EventHandler(this.btnUserRoleSave_Click);
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Visible = false;
-            // 
-            // isDefault
-            // 
-            this.isDefault.DataPropertyName = "IsDefault";
-            this.isDefault.HeaderText = "IsDefault";
-            this.isDefault.Name = "isDefault";
-            this.isDefault.ReadOnly = true;
-            this.isDefault.Visible = false;
-            // 
-            // ModuleName
-            // 
-            this.ModuleName.DataPropertyName = "ModuleName";
-            this.ModuleName.HeaderText = "Module Name";
-            this.ModuleName.Name = "ModuleName";
-            this.ModuleName.ReadOnly = true;
-            // 
-            // Active
-            // 
-            this.Active.DataPropertyName = "IsActive";
-            this.Active.FalseValue = "false";
-            this.Active.HeaderText = "Select";
-            this.Active.IndeterminateValue = "";
-            this.Active.Name = "Active";
-            this.Active.TrueValue = "true";
             // 
             // AdminHome
             // 

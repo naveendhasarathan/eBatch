@@ -118,5 +118,11 @@ namespace eBatchApp.Admin
             var dt = (List<BL.RoleMapping>)dgvUserRoleMapping.DataSource;
             new UsersBpl().SaveUserRoleMapping(userId, dt);
         }
+
+        private void btnAudit_Click(object sender, EventArgs e)
+        {
+            AdminAuditForm aaf = new AdminAuditForm();
+            aaf.ShowDialog();
+        }
     }
 }

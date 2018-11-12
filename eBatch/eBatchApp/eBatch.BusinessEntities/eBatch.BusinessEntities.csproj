@@ -41,10 +41,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\CodeEnum.cs" />
+    <Compile Include="Enums\GlobalConstants.cs" />
     <Compile Include="Enums\SPEnum.cs" />
     <Compile Include="Exceptions\BusinessRuleViolationException.cs" />
     <Compile Include="Exceptions\GeneralException.cs" />
     <Compile Include="Exceptions\UnauthorizedException.cs" />
+    <Compile Include="Models\Audit.cs" />
     <Compile Include="Models\Codevalue.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\RoleMapping.cs" />

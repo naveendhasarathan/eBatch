@@ -11,6 +11,8 @@ namespace eBatch.BusinessEntities.Enums
         spSaveUsers,
         spGetUsers,
         spGetUserRoleMapping,
-        spSaveUserRoleMapping
+        spSaveUserRoleMapping,
+        spGetCodes,
+        spGetAudtiTrail
     }
 }

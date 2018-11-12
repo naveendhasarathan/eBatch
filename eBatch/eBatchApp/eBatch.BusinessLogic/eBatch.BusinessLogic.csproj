@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bpl\AuditBpl.cs" />
     <Compile Include="Bpl\CodeBpl.cs" />
     <Compile Include="Bpl\SuppliersBpl.cs" />
     <Compile Include="Bpl\UsersBpl.cs" />

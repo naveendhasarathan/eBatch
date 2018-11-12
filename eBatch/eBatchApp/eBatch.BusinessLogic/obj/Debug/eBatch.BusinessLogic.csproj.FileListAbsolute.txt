@@ -47,4 +47,3 @@ D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eB
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.BusinessLogic\obj\Debug\eBatch.BusinessLogic.csproj.CopyComplete
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.BusinessLogic\obj\Debug\eBatch.BusinessLogic.dll
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.BusinessLogic\obj\Debug\eBatch.BusinessLogic.pdb
-D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.BusinessLogic\bin\Debug\App.config
