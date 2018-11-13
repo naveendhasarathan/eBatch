@@ -24,6 +24,12 @@ namespace eBatch.ResourceAccess
             return res;
         }
 
+        public List<User> GetUsersDT()
+        {
+            var res= Db.FetchDT<User>(SPEnum.spGetUsers.ToString(), null);
+            return res;
+        }
+
         public List<RoleMapping> GetUserRoleMapping(int userId)
         {
             var dynParams = new DynamicParameters();

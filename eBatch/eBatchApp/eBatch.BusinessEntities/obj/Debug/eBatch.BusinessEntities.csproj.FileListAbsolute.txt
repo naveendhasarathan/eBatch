@@ -14,3 +14,8 @@ D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eB
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.BusinessEntities\obj\Debug\eBatch.BusinessEntities.dll
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.BusinessEntities\obj\Debug\eBatch.BusinessEntities.pdb
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\eBatch.BusinessEntities\obj\Debug\eBatch.BusinessEntities.csprojAssemblyReference.cache
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\eBatch.BusinessEntities\bin\Debug\eBatch.BusinessEntities.dll
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\eBatch.BusinessEntities\bin\Debug\eBatch.BusinessEntities.pdb
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\eBatch.BusinessEntities\obj\Debug\eBatch.BusinessEntities.csproj.CoreCompileInputs.cache
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\eBatch.BusinessEntities\obj\Debug\eBatch.BusinessEntities.dll
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\eBatch.BusinessEntities\obj\Debug\eBatch.BusinessEntities.pdb

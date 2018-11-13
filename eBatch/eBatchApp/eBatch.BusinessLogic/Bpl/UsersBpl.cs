@@ -2,6 +2,7 @@
 using eBatch.ResourceAccess;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,14 @@ namespace eBatch.BusinessLogic.Bpl
     {
         public List<User> GetUsers()
         {
-            return new UsersRal().GetUsers();
+            var res= new UsersRal().GetUsers();
+            var resdt = res.ToDataTable();
+            return res;
+        }
+
+        public DataTable GetUsersDT()
+        {
+            return new UsersRal().GetUsersDT().ToDataTable();
         }
 
         public void SaveUsers(User user)

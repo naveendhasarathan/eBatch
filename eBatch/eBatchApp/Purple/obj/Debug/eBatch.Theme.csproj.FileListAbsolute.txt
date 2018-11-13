@@ -25,3 +25,15 @@ D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eB
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.csproj.CopyComplete
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.dll
 D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.pdb
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\Purple\bin\Debug\eBatch.Theme.dll
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\Purple\bin\Debug\eBatch.Theme.pdb
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\Purple\bin\Debug\MetroFramework.Design.dll
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\Purple\bin\Debug\MetroFramework.dll
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\Purple\bin\Debug\MetroFramework.Fonts.dll
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.csprojAssemblyReference.cache
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.Properties.Resources.resources
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.csproj.GenerateResource.cache
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.csproj.CoreCompileInputs.cache
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.csproj.CopyComplete
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.dll
+D:\Navin\Collections\TelliantWorkspace\NorthPoint\Workspace\NorthPoint\eBatch\eBatch\eBatchApp\Purple\obj\Debug\eBatch.Theme.pdb

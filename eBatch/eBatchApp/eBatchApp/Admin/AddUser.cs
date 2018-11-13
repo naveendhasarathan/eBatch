@@ -6,6 +6,7 @@ using eBatchApp.Common;
 using BL = eBatch.BusinessEntities.Models;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Collections.Generic;
 
 namespace eBatchApp.Admin
 {
@@ -20,6 +21,25 @@ namespace eBatchApp.Admin
         {
             Utility.LoadCodeToCB(cbDifficultyLevel, CodeEnum.DifficultyLevel);
             Utility.LoadCodeToCB(cbRole, CodeEnum.UserRole);
+            List<string> lstUserName = new List<string>();
+            lstUserName.AddRange(new string[] { "Apple", "Alexa", "Aprocot", "Alladin", "box", "boost", "boolean" });
+
+
+            AutoCompleteStringCollection aa = new AutoCompleteStringCollection();
+            aa.AddRange(lstUserName.ToArray());
+
+            cbUserName.AutoCompleteSource = AutoCompleteSource.ListItems;
+            cbUserName.AutoCompleteCustomSource = aa;
+            cbUserName.Items.AddRange(lstUserName.ToArray());
+            cbUserName.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            //cbUserName.DropDownStyle = ComboBoxStyle.DropDownList;
+            // cbUserName.DroppedDown = true;
+
+
+            //  cbUserName.DataSource =  lstUserName;
+
+            //Only the value AutoCompleteMode.None can be used when DropDownStyle is ComboBoxStyle.DropDownList and AutoCompleteSource is not AutoCompleteSource.ListItems.
+
 
             FancyStyleToggleSwitch.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Fancy;
             FancyStyleToggleSwitch.Size = new Size(100, 30);
@@ -56,6 +76,11 @@ namespace eBatchApp.Admin
         private void metroButton1_Click(object sender, EventArgs e)
         {
             MessageBox.Show(this.FancyStyleToggleSwitch.Checked.ToString());
+        }
+
+        private void cbUserName_KeyDown(object sender, KeyEventArgs e)
+        {
+           // cbUserName.DroppedDown = false;
         }
     }
 }

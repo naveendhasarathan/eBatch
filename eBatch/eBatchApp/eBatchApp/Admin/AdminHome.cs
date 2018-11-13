@@ -34,7 +34,14 @@ namespace eBatchApp.Admin
 
         public void LoadUsers()
         {
-            dgvUsers.DataSource = new UsersBpl().GetUsers();
+            //dgvUsers.DataSource = new UsersBpl().GetUsers();
+            var res = new UsersBpl().GetUsersDT();
+            dgvUsers.DataSource = res;
+
+            dgvUsers.PageSize = 2;
+            dgvUsers.SetPagedDataSource(res, bindingNavigator1);
+
+
         }
 
         private void btnAddUser_Click(object sender, EventArgs e)
@@ -93,7 +100,7 @@ namespace eBatchApp.Admin
 
         private void LoadUserRoleMappingList(int userId)
         {
-           var result= new UsersBpl().GetUserRoleMapping(userId);
+            var result = new UsersBpl().GetUserRoleMapping(userId);
             dgvUserRoleMapping.DataSource = result;
         }
 
@@ -106,7 +113,7 @@ namespace eBatchApp.Admin
         {
             ComboBox cb = (ComboBox)sender;
             if (!cb.Focused) { return; }
-             userId = (int)cb.SelectedValue;
+            userId = (int)cb.SelectedValue;
             LoadUserRoleMappingList(userId);
         }
 

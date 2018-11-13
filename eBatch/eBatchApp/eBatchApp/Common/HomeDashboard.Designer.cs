@@ -30,14 +30,14 @@
         {
             this.AdminTile = new MetroFramework.Controls.MetroTile();
             this.DataPrepTile = new MetroFramework.Controls.MetroTile();
-            this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.DataEntryTile = new MetroFramework.Controls.MetroTile();
             this.VerificationTile = new MetroFramework.Controls.MetroTile();
-            this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.ResearchTitle = new MetroFramework.Controls.MetroTile();
             this.DisbursementTile = new MetroFramework.Controls.MetroTile();
             this.dashboardMessage = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.dashboardMessage.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,6 +45,7 @@
             // 
             this.AdminTile.ActiveControl = null;
             this.AdminTile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(118)))), ((int)(((byte)(132)))));
+            this.AdminTile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AdminTile.ForeColor = System.Drawing.Color.White;
             this.AdminTile.Location = new System.Drawing.Point(433, 39);
             this.AdminTile.Name = "AdminTile";
@@ -63,6 +64,10 @@
             this.AdminTile.UseStyleColors = true;
             this.AdminTile.UseTileImage = true;
             this.AdminTile.Click += new System.EventHandler(this.AdminTile_Click);
+            this.AdminTile.MouseClick += new System.Windows.Forms.MouseEventHandler(this.AdminTile_MouseClick);
+            this.AdminTile.MouseEnter += new System.EventHandler(this.AdminTile_MouseEnter);
+            this.AdminTile.MouseLeave += new System.EventHandler(this.AdminTile_MouseLeave);
+            this.AdminTile.MouseHover += new System.EventHandler(this.AdminTile_MouseHover);
             // 
             // DataPrepTile
             // 
@@ -86,33 +91,12 @@
             this.DataPrepTile.UseStyleColors = true;
             this.DataPrepTile.UseTileImage = true;
             // 
-            // metroTile2
-            // 
-            this.metroTile2.ActiveControl = null;
-            this.metroTile2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(118)))), ((int)(((byte)(132)))));
-            this.metroTile2.ForeColor = System.Drawing.Color.White;
-            this.metroTile2.Location = new System.Drawing.Point(1161, 39);
-            this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(212, 151);
-            this.metroTile2.Style = MetroFramework.MetroColorStyle.Purple;
-            this.metroTile2.TabIndex = 2;
-            this.metroTile2.Text = "Admin";
-            this.metroTile2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile2.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTile2.TileImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.metroTile2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.metroTile2.UseCustomBackColor = true;
-            this.metroTile2.UseCustomForeColor = true;
-            this.metroTile2.UseSelectable = true;
-            this.metroTile2.UseStyleColors = true;
-            // 
             // DataEntryTile
             // 
             this.DataEntryTile.ActiveControl = null;
             this.DataEntryTile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(118)))), ((int)(((byte)(132)))));
             this.DataEntryTile.ForeColor = System.Drawing.Color.White;
-            this.DataEntryTile.Location = new System.Drawing.Point(433, 284);
+            this.DataEntryTile.Location = new System.Drawing.Point(1167, 39);
             this.DataEntryTile.Name = "DataEntryTile";
             this.DataEntryTile.Size = new System.Drawing.Size(212, 151);
             this.DataEntryTile.Style = MetroFramework.MetroColorStyle.Purple;
@@ -134,7 +118,7 @@
             this.VerificationTile.ActiveControl = null;
             this.VerificationTile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(118)))), ((int)(((byte)(132)))));
             this.VerificationTile.ForeColor = System.Drawing.Color.White;
-            this.VerificationTile.Location = new System.Drawing.Point(806, 284);
+            this.VerificationTile.Location = new System.Drawing.Point(433, 261);
             this.VerificationTile.Name = "VerificationTile";
             this.VerificationTile.Size = new System.Drawing.Size(212, 151);
             this.VerificationTile.Style = MetroFramework.MetroColorStyle.Purple;
@@ -151,33 +135,12 @@
             this.VerificationTile.UseStyleColors = true;
             this.VerificationTile.UseTileImage = true;
             // 
-            // metroTile5
-            // 
-            this.metroTile5.ActiveControl = null;
-            this.metroTile5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(118)))), ((int)(((byte)(132)))));
-            this.metroTile5.ForeColor = System.Drawing.Color.White;
-            this.metroTile5.Location = new System.Drawing.Point(1161, 284);
-            this.metroTile5.Name = "metroTile5";
-            this.metroTile5.Size = new System.Drawing.Size(212, 151);
-            this.metroTile5.Style = MetroFramework.MetroColorStyle.Purple;
-            this.metroTile5.TabIndex = 5;
-            this.metroTile5.Text = "Admin";
-            this.metroTile5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile5.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTile5.TileImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.metroTile5.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile5.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.metroTile5.UseCustomBackColor = true;
-            this.metroTile5.UseCustomForeColor = true;
-            this.metroTile5.UseSelectable = true;
-            this.metroTile5.UseStyleColors = true;
-            // 
             // ResearchTitle
             // 
             this.ResearchTitle.ActiveControl = null;
             this.ResearchTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(118)))), ((int)(((byte)(132)))));
             this.ResearchTitle.ForeColor = System.Drawing.Color.White;
-            this.ResearchTitle.Location = new System.Drawing.Point(433, 497);
+            this.ResearchTitle.Location = new System.Drawing.Point(806, 261);
             this.ResearchTitle.Name = "ResearchTitle";
             this.ResearchTitle.Size = new System.Drawing.Size(212, 151);
             this.ResearchTitle.Style = MetroFramework.MetroColorStyle.Purple;
@@ -199,7 +162,7 @@
             this.DisbursementTile.ActiveControl = null;
             this.DisbursementTile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(118)))), ((int)(((byte)(132)))));
             this.DisbursementTile.ForeColor = System.Drawing.Color.White;
-            this.DisbursementTile.Location = new System.Drawing.Point(806, 497);
+            this.DisbursementTile.Location = new System.Drawing.Point(1167, 261);
             this.DisbursementTile.Name = "DisbursementTile";
             this.DisbursementTile.Size = new System.Drawing.Size(212, 151);
             this.DisbursementTile.Style = MetroFramework.MetroColorStyle.Purple;
@@ -227,6 +190,7 @@
             // richTextBox1
             // 
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
@@ -234,18 +198,49 @@
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "eBatch\nWelcome to eBatch Application";
             // 
+            // metroTile1
+            // 
+            this.metroTile1.ActiveControl = null;
+            this.metroTile1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(118)))), ((int)(((byte)(132)))));
+            this.metroTile1.ForeColor = System.Drawing.Color.White;
+            this.metroTile1.Location = new System.Drawing.Point(433, 478);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(212, 151);
+            this.metroTile1.Style = MetroFramework.MetroColorStyle.Purple;
+            this.metroTile1.TabIndex = 9;
+            this.metroTile1.Text = "Reports";
+            this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile1.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTile1.TileImage = global::eBatchApp.Properties.Resources.Reports;
+            this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile1.UseCustomBackColor = true;
+            this.metroTile1.UseCustomForeColor = true;
+            this.metroTile1.UseSelectable = true;
+            this.metroTile1.UseStyleColors = true;
+            this.metroTile1.UseTileImage = true;
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Location = new System.Drawing.Point(1227, 616);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(250, 35);
+            this.webBrowser1.TabIndex = 10;
+            this.webBrowser1.Visible = false;
+            // 
             // HomeDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1500, 671);
+            this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.dashboardMessage);
             this.Controls.Add(this.DisbursementTile);
             this.Controls.Add(this.ResearchTitle);
-            this.Controls.Add(this.metroTile5);
             this.Controls.Add(this.VerificationTile);
             this.Controls.Add(this.DataEntryTile);
-            this.Controls.Add(this.metroTile2);
             this.Controls.Add(this.DataPrepTile);
             this.Controls.Add(this.AdminTile);
             this.Location = new System.Drawing.Point(0, 0);
@@ -260,13 +255,13 @@
 
         private MetroFramework.Controls.MetroTile AdminTile;
         private MetroFramework.Controls.MetroTile DataPrepTile;
-        private MetroFramework.Controls.MetroTile metroTile2;
         private MetroFramework.Controls.MetroTile DataEntryTile;
         private MetroFramework.Controls.MetroTile VerificationTile;
-        private MetroFramework.Controls.MetroTile metroTile5;
         private MetroFramework.Controls.MetroTile ResearchTitle;
         private MetroFramework.Controls.MetroTile DisbursementTile;
         private System.Windows.Forms.Panel dashboardMessage;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private MetroFramework.Controls.MetroTile metroTile1;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }

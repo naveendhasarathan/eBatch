@@ -43,6 +43,8 @@ namespace eBatchApp.Admin
             this.eButton1 = new eBatch.Theme.Purple.eNewButton();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbUserName = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // FancyStyleToggleSwitch
@@ -60,9 +62,8 @@ namespace eBatchApp.Admin
             // 
             // 
             this.txtUserName.CustomButton.Image = null;
-            this.txtUserName.CustomButton.Location = new System.Drawing.Point(82, 2);
+            this.txtUserName.CustomButton.Location = new System.Drawing.Point(0, 0);
             this.txtUserName.CustomButton.Name = "";
-            this.txtUserName.CustomButton.Size = new System.Drawing.Size(15, 15);
             this.txtUserName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtUserName.CustomButton.TabIndex = 1;
             this.txtUserName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -81,9 +82,9 @@ namespace eBatchApp.Admin
             this.txtUserName.SelectionStart = 0;
             this.txtUserName.ShortcutsEnabled = true;
             this.txtUserName.ShowClearButton = true;
-            this.txtUserName.Size = new System.Drawing.Size(100, 20);
+            this.txtUserName.Size = new System.Drawing.Size(221, 35);
             this.txtUserName.Style = MetroFramework.MetroColorStyle.Purple;
-            this.txtUserName.TabIndex = 0;
+            this.txtUserName.TabIndex = 15;
             this.txtUserName.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtUserName.UseCustomBackColor = true;
             this.txtUserName.UseCustomForeColor = true;
@@ -246,11 +247,36 @@ namespace eBatchApp.Admin
             this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(233, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "User Name";
+            // 
+            // cbUserName
+            // 
+            this.cbUserName.AutoCompleteCustomSource.AddRange(new string[] {
+            "abc",
+            "abcd",
+            "abcde"});
+            this.cbUserName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbUserName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbUserName.FormattingEnabled = true;
+            this.cbUserName.Location = new System.Drawing.Point(403, 47);
+            this.cbUserName.Name = "cbUserName";
+            this.cbUserName.Size = new System.Drawing.Size(221, 21);
+            this.cbUserName.TabIndex = 20;
+            // 
             // AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbUserName);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.metroTextBox1);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.eButton1);
@@ -288,5 +314,7 @@ namespace eBatchApp.Admin
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private JCS.ToggleSwitch FancyStyleToggleSwitch;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cbUserName;
     }
 }
